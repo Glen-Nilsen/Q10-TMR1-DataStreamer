@@ -1,0 +1,342 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q10 ]
+[d frameptr 4065 ]
+"4 /opt/microchip/xc8/v2.31/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v2.31/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v2.31/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v2.31/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v2.31/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /opt/microchip/xc8/v2.31/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 /opt/microchip/xc8/v2.31/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v2.31/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.31/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v2.31/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.31/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"40 /home/projects/Q10-Hello/main.c
+[v _TMR0_overflow_cb TMR0_overflow_cb `(v  1 e 1 0 ]
+"46
+[v _main main `(i  1 e 2 0 ]
+"59 /home/projects/Q10-Hello/mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"65 /home/projects/Q10-Hello/mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"96
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"125
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+"134
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+"138
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"151
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+"160
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+"164
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"177
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+"186
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+"190
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"47 /home/projects/Q10-Hello/mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"62 /home/projects/Q10-Hello/mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"72 /home/projects/Q10-Hello/mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_Initialize Timer0_Initialize `(v  1 e 1 0 ]
+"97
+[v _Timer0_Start Timer0_Start `(v  1 e 1 0 ]
+"102
+[v _Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+"117
+[v _Timer0_Write Timer0_Write `(v  1 e 1 0 ]
+"129
+[v _Timer0_OverflowISR Timer0_OverflowISR `(v  1 e 1 0 ]
+"139
+[v _Timer0_OverflowCallbackRegister Timer0_OverflowCallbackRegister `(v  1 e 1 0 ]
+"144
+[v _Timer0_DefaultOverflowCallback Timer0_DefaultOverflowCallback `(v  1 s 1 Timer0_DefaultOverflowCallback ]
+"12197 /home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h
+[v _T0CKIPPS T0CKIPPS `VEuc  1 e 1 @3743 ]
+[s S221 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 INT1IE 1 0 :1:1 
+`uc 1 INT2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"15231
+[u S228 . 1 `S221 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES228  1 e 1 @3773 ]
+[s S204 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 INT1IF 1 0 :1:1 
+`uc 1 INT2IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"15648
+[u S211 . 1 `S204 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES211  1 e 1 @3781 ]
+"16628
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
+"16698
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @3796 ]
+"16768
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @3797 ]
+"16808
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @3798 ]
+"16920
+[v _OSCEN OSCEN `VEuc  1 e 1 @3799 ]
+"16971
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3800 ]
+"17029
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3801 ]
+"19086
+[v _IOCAF IOCAF `VEuc  1 e 1 @3845 ]
+"19148
+[v _IOCAN IOCAN `VEuc  1 e 1 @3846 ]
+"19210
+[v _IOCAP IOCAP `VEuc  1 e 1 @3847 ]
+"19272
+[v _INLVLA INLVLA `VEuc  1 e 1 @3848 ]
+"19334
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3849 ]
+"19396
+[v _ODCONA ODCONA `VEuc  1 e 1 @3850 ]
+"19458
+[v _WPUA WPUA `VEuc  1 e 1 @3851 ]
+"19520
+[v _ANSELA ANSELA `VEuc  1 e 1 @3852 ]
+"19582
+[v _IOCBF IOCBF `VEuc  1 e 1 @3853 ]
+"19644
+[v _IOCBN IOCBN `VEuc  1 e 1 @3854 ]
+"19706
+[v _IOCBP IOCBP `VEuc  1 e 1 @3855 ]
+"19768
+[v _INLVLB INLVLB `VEuc  1 e 1 @3856 ]
+"19830
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3857 ]
+"19892
+[v _ODCONB ODCONB `VEuc  1 e 1 @3858 ]
+"19954
+[v _WPUB WPUB `VEuc  1 e 1 @3859 ]
+"20016
+[v _ANSELB ANSELB `VEuc  1 e 1 @3860 ]
+"20078
+[v _IOCCF IOCCF `VEuc  1 e 1 @3861 ]
+"20140
+[v _IOCCN IOCCN `VEuc  1 e 1 @3862 ]
+"20202
+[v _IOCCP IOCCP `VEuc  1 e 1 @3863 ]
+"20264
+[v _INLVLC INLVLC `VEuc  1 e 1 @3864 ]
+"20326
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3865 ]
+"20388
+[v _ODCONC ODCONC `VEuc  1 e 1 @3866 ]
+"20450
+[v _WPUC WPUC `VEuc  1 e 1 @3867 ]
+"20512
+[v _ANSELC ANSELC `VEuc  1 e 1 @3868 ]
+"20574
+[v _INLVLD INLVLD `VEuc  1 e 1 @3869 ]
+"20636
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @3870 ]
+"20698
+[v _ODCOND ODCOND `VEuc  1 e 1 @3871 ]
+"20760
+[v _WPUD WPUD `VEuc  1 e 1 @3872 ]
+"20822
+[v _ANSELD ANSELD `VEuc  1 e 1 @3873 ]
+"20884
+[v _IOCEF IOCEF `VEuc  1 e 1 @3874 ]
+"20905
+[v _IOCEN IOCEN `VEuc  1 e 1 @3875 ]
+"20926
+[v _IOCEP IOCEP `VEuc  1 e 1 @3876 ]
+"20947
+[v _INLVLE INLVLE `VEuc  1 e 1 @3877 ]
+"20985
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @3878 ]
+"21017
+[v _ODCONE ODCONE `VEuc  1 e 1 @3879 ]
+"21049
+[v _WPUE WPUE `VEuc  1 e 1 @3880 ]
+"21087
+[v _ANSELE ANSELE `VEuc  1 e 1 @3881 ]
+"27485
+[v _LATA LATA `VEuc  1 e 1 @3970 ]
+"27547
+[v _LATB LATB `VEuc  1 e 1 @3971 ]
+"27609
+[v _LATC LATC `VEuc  1 e 1 @3972 ]
+"27671
+[v _LATD LATD `VEuc  1 e 1 @3973 ]
+"27733
+[v _LATE LATE `VEuc  1 e 1 @3974 ]
+[s S89 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"27745
+[u S93 . 1 `S89 1 . 1 0 ]
+[v _LATEbits LATEbits `VES93  1 e 1 @3974 ]
+"27765
+[v _TRISA TRISA `VEuc  1 e 1 @3975 ]
+"27887
+[v _TRISB TRISB `VEuc  1 e 1 @3976 ]
+"28009
+[v _TRISC TRISC `VEuc  1 e 1 @3977 ]
+"28131
+[v _TRISD TRISD `VEuc  1 e 1 @3978 ]
+"28253
+[v _TRISE TRISE `VEuc  1 e 1 @3979 ]
+"36170
+[v _TMR0L TMR0L `VEuc  1 e 1 @4050 ]
+"36308
+[v _TMR0H TMR0H `VEuc  1 e 1 @4051 ]
+"36562
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @4052 ]
+[s S239 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"36582
+[s S245 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+"36582
+[u S250 . 1 `S239 1 . 1 0 `S245 1 . 1 0 ]
+"36582
+"36582
+[v _T0CON0bits T0CON0bits `VES250  1 e 1 @4052 ]
+"36627
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @4053 ]
+[s S107 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"37512
+[s S115 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"37512
+[s S119 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"37512
+[u S123 . 1 `S107 1 . 1 0 `S115 1 . 1 0 `S119 1 . 1 0 ]
+"37512
+"37512
+[v _INTCONbits INTCONbits `VES123  1 e 1 @4082 ]
+"61 /home/projects/Q10-Hello/mcc_generated_files/system/src/interrupt.c
+[v _INT0_InterruptHandler INT0_InterruptHandler `*.38(v  1 e 3 0 ]
+"62
+[v _INT1_InterruptHandler INT1_InterruptHandler `*.38(v  1 e 3 0 ]
+"63
+[v _INT2_InterruptHandler INT2_InterruptHandler `*.38(v  1 e 3 0 ]
+"69 /home/projects/Q10-Hello/mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_OverflowCallback Timer0_OverflowCallback `*.38(v  1 s 3 Timer0_OverflowCallback ]
+"46 /home/projects/Q10-Hello/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"60
+} 0
+"62 /home/projects/Q10-Hello/mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"68
+} 0
+"72 /home/projects/Q10-Hello/mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_Initialize Timer0_Initialize `(v  1 e 1 0 ]
+{
+"95
+} 0
+"139
+[v _Timer0_OverflowCallbackRegister Timer0_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v Timer0_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 3 ]
+"142
+} 0
+"47 /home/projects/Q10-Hello/mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"133
+} 0
+"65 /home/projects/Q10-Hello/mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"186
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 3 ]
+"188
+} 0
+"160
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 3 ]
+"162
+} 0
+"134
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 3 ]
+"136
+} 0
+"59 /home/projects/Q10-Hello/mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"96 /home/projects/Q10-Hello/mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"114
+} 0
+"129 /home/projects/Q10-Hello/mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_OverflowISR Timer0_OverflowISR `(v  1 e 1 0 ]
+{
+"137
+} 0
+"40 /home/projects/Q10-Hello/main.c
+[v _TMR0_overflow_cb TMR0_overflow_cb `(v  1 e 1 0 ]
+{
+"44
+} 0
+"144 /home/projects/Q10-Hello/mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_DefaultOverflowCallback Timer0_DefaultOverflowCallback `(v  1 s 1 Timer0_DefaultOverflowCallback ]
+{
+"148
+} 0
