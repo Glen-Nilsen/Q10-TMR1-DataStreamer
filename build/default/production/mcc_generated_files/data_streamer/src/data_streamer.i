@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/system/src/pins.c"
+# 1 "mcc_generated_files/data_streamer/src/data_streamer.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,118 @@
 # 1 "<built-in>" 2
 # 1 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/system/src/pins.c" 2
-# 44 "mcc_generated_files/system/src/pins.c"
-# 1 "mcc_generated_files/system/src/../pins.h" 1
-# 51 "mcc_generated_files/system/src/../pins.h"
+# 1 "mcc_generated_files/data_streamer/src/data_streamer.c" 2
+
+
+# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 1 3
+
+
+
+# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/musl_xc8.h" 1 3
+# 5 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 2 3
+# 22 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 3
+# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 1 3
+# 127 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+
+
+
+
+typedef __int24 int24_t;
+
+
+
+
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+
+
+
+
+typedef __uint24 uint24_t;
+
+
+
+
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 23 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 2 3
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 144 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 3
+# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 145 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 2 3
+# 3 "mcc_generated_files/data_streamer/src/data_streamer.c" 2
+
+# 1 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h" 1
+# 65 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
 # 1 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 1 3
 # 18 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -23,16 +131,7 @@ extern double __fpnormalize(double);
 
 
 # 1 "/opt/microchip/xc8/v2.31/pic/include/c99/stdlib.h" 1 3
-
-
-
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/musl_xc8.h" 1 3
-# 5 "/opt/microchip/xc8/v2.31/pic/include/c99/stdlib.h" 2 3
-
-
-
-
-
+# 10 "/opt/microchip/xc8/v2.31/pic/include/c99/stdlib.h" 3
 # 1 "/opt/microchip/xc8/v2.31/pic/include/c99/features.h" 1 3
 # 11 "/opt/microchip/xc8/v2.31/pic/include/c99/stdlib.h" 2 3
 # 21 "/opt/microchip/xc8/v2.31/pic/include/c99/stdlib.h" 3
@@ -41,10 +140,6 @@ extern double __fpnormalize(double);
 typedef long int wchar_t;
 # 122 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 204 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 22 "/opt/microchip/xc8/v2.31/pic/include/c99/stdlib.h" 2 3
 
 int atoi (const char *);
@@ -112,91 +207,7 @@ extern void __builtin_software_breakpoint(void);
 
 
 
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 1 3
-# 22 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 3
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 1 3
-# 127 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef unsigned long uintptr_t;
-# 142 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef long intptr_t;
-# 158 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef signed char int8_t;
 
-
-
-
-typedef short int16_t;
-# 173 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef long int32_t;
-
-
-
-
-
-typedef long long int64_t;
-# 188 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-# 209 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 229 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 23 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 2 3
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 144 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 3
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 145 "/opt/microchip/xc8/v2.31/pic/include/c99/stdint.h" 2 3
-# 5 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/builtins.h" 2 3
 
 
 #pragma intrinsic(__nop)
@@ -21350,103 +21361,114 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 2 3
-# 51 "mcc_generated_files/system/src/../pins.h" 2
-# 135 "mcc_generated_files/system/src/../pins.h"
-void PIN_MANAGER_Initialize (void);
-# 147 "mcc_generated_files/system/src/../pins.h"
-void PIN_MANAGER_IOC(void);
-# 44 "mcc_generated_files/system/src/pins.c" 2
+# 65 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h" 2
+
+# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/stdbool.h" 1 3
+# 66 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h" 2
 
 
-
-void PIN_MANAGER_Initialize(void)
+# 1 "mcc_generated_files/data_streamer/src/../../uart/uart_interface.h" 1
+# 73 "mcc_generated_files/data_streamer/src/../../uart/uart_interface.h"
+struct UART_INTERFACE
 {
-
-
-
-    LATA = 0x0;
-    LATB = 0x0;
-    LATC = 0x0;
-    LATD = 0x0;
-    LATE = 0x0;
-
-
-
-
-    TRISA = 0xFF;
-    TRISB = 0xFF;
-    TRISC = 0xFF;
-    TRISD = 0xFF;
-    TRISE = 0x6;
-
-
-
-
-    ANSELA = 0x0;
-    ANSELB = 0x0;
-    ANSELC = 0x0;
-    ANSELD = 0x0;
-    ANSELE = 0x0;
-
-
-
-
-    WPUA = 0x0;
-    WPUB = 0x0;
-    WPUC = 0x0;
-    WPUD = 0x0;
-    WPUE = 0x4;
-
-
-
-
-    ODCONA = 0x0;
-    ODCONB = 0x0;
-    ODCONC = 0x0;
-    ODCOND = 0x0;
-    ODCONE = 0x0;
+    void (*Initialize)(void);
+    uint8_t (*Read)(void);
+    void (*Write)(uint8_t);
+    void (*RxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*TxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*ErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*FramingErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*OverrunErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*ParityErrorCallbackRegister)(void (*CallbackHandler));
+    void (*ChecksumErrorCallbackRegister)(void (*CallbackHandler));
+    _Bool (*IsRxReady)(void);
+    _Bool (*IsTxReady)(void);
+    _Bool (*IsTxDone)(void);
+};
+# 68 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h" 2
+# 80 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}eusart2_status_t;
+# 97 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+_Bool __attribute__(( deprecated )) EUSART2_is_tx_ready(void);
+_Bool __attribute__(( deprecated )) EUSART2_is_rx_ready(void);
+_Bool __attribute__(( deprecated )) EUSART2_is_tx_done(void);
+eusart2_status_t EUSART2_get_last_status(void);
+# 109 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+extern volatile uint8_t eusart2TxBufferRemaining;
+extern volatile uint8_t eusart2RxCount;
+extern const struct UART_INTERFACE EUSART2_Interface;
 
 
 
 
-    SLRCONA = 0xFF;
-    SLRCONB = 0xFF;
-    SLRCONC = 0xFF;
-    SLRCOND = 0xFF;
-    SLRCONE = 0x7;
+extern void (*EUSART2_TxDefaultInterruptHandler)(void);
+extern void (*EUSART2_RxDefaultInterruptHandler)(void);
+# 139 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_Initialize(void);
+# 187 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+_Bool EUSART2_IsTxReady(void);
+# 235 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+_Bool EUSART2_IsRxReady(void);
+# 282 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+_Bool EUSART2_IsTxDone(void);
+# 330 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+eusart2_status_t EUSART2_GetLastStatus(void);
+# 350 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+uint8_t EUSART2_Read(void);
+# 370 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_Write(uint8_t txData);
+# 391 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_Transmit_ISR(void);
+# 412 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_Receive_ISR(void);
+# 433 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_RxDataHandler(void);
+# 451 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 469 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 487 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
+# 507 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_SetTxInterruptHandler(void (* interruptHandler)(void));
+# 527 "mcc_generated_files/data_streamer/src/../../uart/eusart2.h"
+void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
+# 4 "mcc_generated_files/data_streamer/src/data_streamer.c" 2
 
 
 
 
-    INLVLA = 0xFF;
-    INLVLB = 0xFF;
-    INLVLC = 0xFF;
-    INLVLD = 0xFF;
-    INLVLE = 0xF;
 
 
 
-    T0CKIPPS = 0x4;
-
-
-
-
-    IOCAP = 0x0;
-    IOCAN = 0x0;
-    IOCAF = 0x0;
-    IOCBP = 0x0;
-    IOCBN = 0x0;
-    IOCBF = 0x0;
-    IOCCP = 0x0;
-    IOCCN = 0x0;
-    IOCCF = 0x0;
-    IOCEP = 0x0;
-    IOCEN = 0x0;
-    IOCEF = 0x0;
-
-
+static void variableWrite_sendValue(uint8_t* byte_ptr, uint8_t num_bytes)
+ {
+      for(uint8_t i = 0; i < num_bytes; i++)
+      {
+         EUSART2_Write(byte_ptr[i]);
+      }
 }
 
-void PIN_MANAGER_IOC(void)
+void variableWrite_sendFrame(uint8_t count_8bit, uint16_t count_16bit, uint32_t count_32bit)
 {
+   EUSART2_Write(3);
+
+   EUSART2_Write(count_8bit);
+
+   EUSART2_Write((count_16bit >> 0) & 0xFF);
+   EUSART2_Write((count_16bit >> 8) & 0xFF);
+
+   variableWrite_sendValue((uint8_t *) &count_32bit, 4);
+
+   EUSART2_Write((255 - 3));
+
+   while(!EUSART2_IsTxDone());
 }

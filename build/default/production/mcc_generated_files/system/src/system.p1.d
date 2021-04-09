@@ -6,4 +6,7 @@ mcc_generated_files/system/src/../../system/clock.h  \
 mcc_generated_files/system/src/../../system/interrupt.h  \
 mcc_generated_files/system/src/../../timer/tmr0.h  \
 mcc_generated_files/system/src/../../timer/timer_interface.h  \
-mcc_generated_files/system/src/../../system/pins.h 
+mcc_generated_files/system/src/../../uart/eusart2.h  \
+mcc_generated_files/system/src/../../uart/uart_interface.h  \
+mcc_generated_files/system/src/../../system/pins.h  \
+mcc_generated_files/system/src/../../data_streamer/data_streamer.h 

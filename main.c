@@ -37,9 +37,17 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
     Main application
 */
 
+uint8_t count_8bit = 0;
+uint16_t count_16bit = 0;
+uint32_t count_32bit = 0;
+
 void TMR0_overflow_cb(void)
 {
     LED_RE0_Toggle();
+    count_8bit+=100;
+    count_16bit+=100;
+    count_32bit+=100;
+    variableWrite_sendFrame(count_8bit, count_16bit, count_32bit);
 
 }
 

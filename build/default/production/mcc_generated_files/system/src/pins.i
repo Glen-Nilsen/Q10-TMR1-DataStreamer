@@ -21351,9 +21351,9 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 2 3
 # 51 "mcc_generated_files/system/src/../pins.h" 2
-# 135 "mcc_generated_files/system/src/../pins.h"
+# 175 "mcc_generated_files/system/src/../pins.h"
 void PIN_MANAGER_Initialize (void);
-# 147 "mcc_generated_files/system/src/../pins.h"
+# 187 "mcc_generated_files/system/src/../pins.h"
 void PIN_MANAGER_IOC(void);
 # 44 "mcc_generated_files/system/src/pins.c" 2
 
@@ -21376,7 +21376,7 @@ void PIN_MANAGER_Initialize(void)
     TRISA = 0xFF;
     TRISB = 0xFF;
     TRISC = 0xFF;
-    TRISD = 0xFF;
+    TRISD = 0xFE;
     TRISE = 0x6;
 
 
@@ -21426,7 +21426,9 @@ void PIN_MANAGER_Initialize(void)
 
 
 
+    RX2PPS = 0x19;
     T0CKIPPS = 0x4;
+    RD0PPS = 0xB;
 
 
 

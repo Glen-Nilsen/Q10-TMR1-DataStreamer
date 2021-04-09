@@ -1796,8 +1796,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _Timer0_Initialize ]
 [f ]
 "75
-[; ;mcc_generated_files/timer/src/tmr0.c: 75:     TMR0H = 0xC0;
-[e = _TMR0H -> -> 192 `i `uc ]
+[; ;mcc_generated_files/timer/src/tmr0.c: 75:     TMR0H = 0x5F;
+[e = _TMR0H -> -> 95 `i `uc ]
 "78
 [; ;mcc_generated_files/timer/src/tmr0.c: 78:     TMR0L = 0x0;
 [e = _TMR0L -> -> 0 `i `uc ]

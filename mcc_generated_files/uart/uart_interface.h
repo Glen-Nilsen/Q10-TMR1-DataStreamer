@@ -1,22 +1,24 @@
 /**
-  @Generated CCL Source File
+  uart_interface Generated Driver API Header File
 
-  @Company:
+  @Company
     Microchip Technology Inc.
 
-  @File Name:
-    system.c
+  @File Name
+    uart_interface.h
 
-  @Summary:
-    This is the system.c file generated using CCL
+  @Summary
+    This is the generated driver interface header file for the uart_interface driver.
 
-  @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This file provides common enumerations for uart_interface driver.
     Generation Information :
-        Driver Version    :  2.00
+        Product Revision  :  CCL - 1.8.2
+        Device            :  PIC18F47Q43
+        Driver Version    :  1.0.0
     The generated drivers are tested against the following:
-        Compiler          :  XC8 v2.20
-        MPLAB             :  MPLAB X 5.40
+        Compiler          :  XC8 v2.2
+        MPLAB             :  Standalone
 */
 
 /*
@@ -53,18 +55,36 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
     such restrictions will not apply to such third party software.
 */
 
- /**
-   Section: Included Files
+#ifndef UART_INTERFACE_H
+#define UART_INTERFACE_H
+/**
+  Section: Included Files
+*/
+#include <stdbool.h>
+#include <stdint.h>
+#include <xc.h>
+    
+/**
+  uart_interface
+
+  @Description
+    Structure containing the function pointers of uart_interface driver.
  */
-#include "../system.h"
+struct UART_INTERFACE
+{   
+    void (*Initialize)(void);
+    uint8_t (*Read)(void);
+    void (*Write)(uint8_t);
+    void (*RxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*TxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*ErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*FramingErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*OverrunErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*ParityErrorCallbackRegister)(void (*CallbackHandler));
+    void (*ChecksumErrorCallbackRegister)(void (*CallbackHandler));
+    bool (*IsRxReady)(void);
+    bool (*IsTxReady)(void);
+    bool (*IsTxDone)(void);
+};
 
-
-void SYSTEM_Initialize(void)
-{
-    INTERRUPT_Initialize();
-    CLOCK_Initialize();
-    Timer0_Initialize();
-    EUSART2_Initialize();
-    PIN_MANAGER_Initialize();
-}
-
+#endif // end of UART_INTERFACE_H

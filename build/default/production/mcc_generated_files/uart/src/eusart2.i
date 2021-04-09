@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "mcc_generated_files/uart/src/eusart2.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 34 "main.c"
-# 1 "./mcc_generated_files/system/system.h" 1
-# 58 "./mcc_generated_files/system/system.h"
+# 1 "mcc_generated_files/uart/src/eusart2.c" 2
+# 61 "mcc_generated_files/uart/src/eusart2.c"
+# 1 "mcc_generated_files/uart/src/../eusart2.h" 1
+# 65 "mcc_generated_files/uart/src/../eusart2.h"
 # 1 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 1 3
 # 18 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -21350,182 +21350,342 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 2 3
-# 58 "./mcc_generated_files/system/system.h" 2
-
+# 65 "mcc_generated_files/uart/src/../eusart2.h" 2
 
 # 1 "/opt/microchip/xc8/v2.31/pic/include/c99/stdbool.h" 1 3
-# 60 "./mcc_generated_files/system/system.h" 2
-
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/conio.h" 1 3
+# 66 "mcc_generated_files/uart/src/../eusart2.h" 2
 
 
-
-
-
-
-
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/errno.h" 1 3
-# 12 "/opt/microchip/xc8/v2.31/pic/include/c99/errno.h" 3
-extern int errno;
-# 9 "/opt/microchip/xc8/v2.31/pic/include/c99/conio.h" 2 3
-# 1 "/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/__null.h" 1 3
-# 10 "/opt/microchip/xc8/v2.31/pic/include/c99/conio.h" 2 3
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 61 "./mcc_generated_files/system/system.h" 2
-
-# 1 "./mcc_generated_files/system/config_bits.h" 1
-# 59 "./mcc_generated_files/system/config_bits.h"
-# 1 "./mcc_generated_files/system/../system/clock.h" 1
-# 63 "./mcc_generated_files/system/../system/clock.h"
-void CLOCK_Initialize(void);
-# 59 "./mcc_generated_files/system/config_bits.h" 2
-# 62 "./mcc_generated_files/system/system.h" 2
-
-# 1 "./mcc_generated_files/system/../system/interrupt.h" 1
-# 133 "./mcc_generated_files/system/../system/interrupt.h"
-void INTERRUPT_Initialize (void);
-# 621 "./mcc_generated_files/system/../system/interrupt.h"
-void INT0_ISR(void);
-# 645 "./mcc_generated_files/system/../system/interrupt.h"
-void INT0_CallBack(void);
-# 668 "./mcc_generated_files/system/../system/interrupt.h"
-void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 692 "./mcc_generated_files/system/../system/interrupt.h"
-extern void (*INT0_InterruptHandler)(void);
-# 716 "./mcc_generated_files/system/../system/interrupt.h"
-void INT0_DefaultInterruptHandler(void);
-# 734 "./mcc_generated_files/system/../system/interrupt.h"
-void INT1_ISR(void);
-# 758 "./mcc_generated_files/system/../system/interrupt.h"
-void INT1_CallBack(void);
-# 781 "./mcc_generated_files/system/../system/interrupt.h"
-void INT1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 805 "./mcc_generated_files/system/../system/interrupt.h"
-extern void (*INT1_InterruptHandler)(void);
-# 829 "./mcc_generated_files/system/../system/interrupt.h"
-void INT1_DefaultInterruptHandler(void);
-# 847 "./mcc_generated_files/system/../system/interrupt.h"
-void INT2_ISR(void);
-# 871 "./mcc_generated_files/system/../system/interrupt.h"
-void INT2_CallBack(void);
-# 894 "./mcc_generated_files/system/../system/interrupt.h"
-void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 918 "./mcc_generated_files/system/../system/interrupt.h"
-extern void (*INT2_InterruptHandler)(void);
-# 942 "./mcc_generated_files/system/../system/interrupt.h"
-void INT2_DefaultInterruptHandler(void);
-# 63 "./mcc_generated_files/system/system.h" 2
-
-
-# 1 "./mcc_generated_files/system/../timer/tmr0.h" 1
-# 67 "./mcc_generated_files/system/../timer/tmr0.h"
-# 1 "./mcc_generated_files/system/../timer/timer_interface.h" 1
-# 62 "./mcc_generated_files/system/../timer/timer_interface.h"
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/stddef.h" 1 3
-# 19 "/opt/microchip/xc8/v2.31/pic/include/c99/stddef.h" 3
-# 1 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 1 3
-# 132 "/opt/microchip/xc8/v2.31/pic/include/c99/bits/alltypes.h" 3
-typedef long ptrdiff_t;
-# 20 "/opt/microchip/xc8/v2.31/pic/include/c99/stddef.h" 2 3
-# 62 "./mcc_generated_files/system/../timer/timer_interface.h" 2
-
-
-
-
-
-
-
-
-struct TMR_INTERFACE
+# 1 "mcc_generated_files/uart/src/../uart_interface.h" 1
+# 73 "mcc_generated_files/uart/src/../uart_interface.h"
+struct UART_INTERFACE
 {
     void (*Initialize)(void);
-    void (*Start)(void);
-    void (*Stop)(void);
-    void (*PeriodCountSet)(size_t count);
-    void (*TimeoutCallbackRegister)(void (* CallbackHandler)(void));
-    void (*Tasks)(void);
+    uint8_t (*Read)(void);
+    void (*Write)(uint8_t);
+    void (*RxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*TxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*ErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*FramingErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*OverrunErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*ParityErrorCallbackRegister)(void (*CallbackHandler));
+    void (*ChecksumErrorCallbackRegister)(void (*CallbackHandler));
+    _Bool (*IsRxReady)(void);
+    _Bool (*IsTxReady)(void);
+    _Bool (*IsTxDone)(void);
 };
-# 67 "./mcc_generated_files/system/../timer/tmr0.h" 2
+# 68 "mcc_generated_files/uart/src/../eusart2.h" 2
+# 80 "mcc_generated_files/uart/src/../eusart2.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}eusart2_status_t;
+# 97 "mcc_generated_files/uart/src/../eusart2.h"
+_Bool __attribute__(( deprecated )) EUSART2_is_tx_ready(void);
+_Bool __attribute__(( deprecated )) EUSART2_is_rx_ready(void);
+_Bool __attribute__(( deprecated )) EUSART2_is_tx_done(void);
+eusart2_status_t EUSART2_get_last_status(void);
+# 109 "mcc_generated_files/uart/src/../eusart2.h"
+extern volatile uint8_t eusart2TxBufferRemaining;
+extern volatile uint8_t eusart2RxCount;
+extern const struct UART_INTERFACE EUSART2_Interface;
 
 
 
 
+extern void (*EUSART2_TxDefaultInterruptHandler)(void);
+extern void (*EUSART2_RxDefaultInterruptHandler)(void);
+# 139 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_Initialize(void);
+# 187 "mcc_generated_files/uart/src/../eusart2.h"
+_Bool EUSART2_IsTxReady(void);
+# 235 "mcc_generated_files/uart/src/../eusart2.h"
+_Bool EUSART2_IsRxReady(void);
+# 282 "mcc_generated_files/uart/src/../eusart2.h"
+_Bool EUSART2_IsTxDone(void);
+# 330 "mcc_generated_files/uart/src/../eusart2.h"
+eusart2_status_t EUSART2_GetLastStatus(void);
+# 350 "mcc_generated_files/uart/src/../eusart2.h"
+uint8_t EUSART2_Read(void);
+# 370 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_Write(uint8_t txData);
+# 391 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_Transmit_ISR(void);
+# 412 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_Receive_ISR(void);
+# 433 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_RxDataHandler(void);
+# 451 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 469 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 487 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
+# 507 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_SetTxInterruptHandler(void (* interruptHandler)(void));
+# 527 "mcc_generated_files/uart/src/../eusart2.h"
+void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
+# 61 "mcc_generated_files/uart/src/eusart2.c" 2
+
+
+const struct UART_INTERFACE EUSART2_Interface = {
+  .Initialize = EUSART2_Initialize,
+  .Write = EUSART2_Write,
+  .Read = EUSART2_Read,
+  .RxCompleteCallbackRegister = EUSART2_SetRxInterruptHandler,
+  .TxCompleteCallbackRegister = EUSART2_SetTxInterruptHandler,
+  .ErrorCallbackRegister = EUSART2_SetErrorHandler,
+  .FramingErrorCallbackRegister = EUSART2_SetFramingErrorHandler,
+  .OverrunErrorCallbackRegister = EUSART2_SetOverrunErrorHandler,
+  .ParityErrorCallbackRegister = ((void*)0),
+  .ChecksumErrorCallbackRegister = ((void*)0),
+  .IsRxReady = EUSART2_IsRxReady,
+  .IsTxReady = EUSART2_IsTxReady,
+  .IsTxDone = EUSART2_IsTxDone
+  };
+# 89 "mcc_generated_files/uart/src/eusart2.c"
+volatile uint8_t eusart2TxHead = 0;
+volatile uint8_t eusart2TxTail = 0;
+volatile uint8_t eusart2TxBuffer[8];
+volatile uint8_t eusart2TxBufferRemaining;
+
+volatile uint8_t eusart2RxHead = 0;
+volatile uint8_t eusart2RxTail = 0;
+volatile uint8_t eusart2RxBuffer[8];
+volatile eusart2_status_t eusart2RxStatusBuffer[8];
+volatile uint8_t eusart2RxCount;
+volatile eusart2_status_t eusart2RxLastError;
 
 
 
 
-extern const struct TMR_INTERFACE Timer0;
-# 96 "./mcc_generated_files/system/../timer/tmr0.h"
-void Timer0_Initialize(void);
-# 120 "./mcc_generated_files/system/../timer/tmr0.h"
-void Timer0_Start(void);
-# 151 "./mcc_generated_files/system/../timer/tmr0.h"
-void Timer0_Stop(void);
-# 178 "./mcc_generated_files/system/../timer/tmr0.h"
-uint8_t Timer0_Read(void);
-# 202 "./mcc_generated_files/system/../timer/tmr0.h"
-void Timer0_Write(size_t timerVal);
-# 227 "./mcc_generated_files/system/../timer/tmr0.h"
-void Timer0_Reload(uint8_t periodVal);
+void (*EUSART2_TxDefaultInterruptHandler)(void);
+void (*EUSART2_RxDefaultInterruptHandler)(void);
 
+void (*EUSART2_FramingErrorHandler)(void);
+void (*EUSART2_OverrunErrorHandler)(void);
+void (*EUSART2_ErrorHandler)(void);
 
+void EUSART2_DefaultFramingErrorHandler(void);
+void EUSART2_DefaultOverrunErrorHandler(void);
+void EUSART2_DefaultErrorHandler(void);
 
-
-
-
-
-void Timer0_OverflowISR(void);
-# 260 "./mcc_generated_files/system/../timer/tmr0.h"
- void Timer0_OverflowCallbackRegister(void (* CallbackHandler)(void));
-# 65 "./mcc_generated_files/system/system.h" 2
-
-# 1 "./mcc_generated_files/system/../system/pins.h" 1
-# 135 "./mcc_generated_files/system/../system/pins.h"
-void PIN_MANAGER_Initialize (void);
-# 147 "./mcc_generated_files/system/../system/pins.h"
-void PIN_MANAGER_IOC(void);
-# 66 "./mcc_generated_files/system/system.h" 2
-# 79 "./mcc_generated_files/system/system.h"
-void SYSTEM_Initialize(void);
-# 34 "main.c" 2
-
-
-
-
-
-
-void TMR0_overflow_cb(void)
+void EUSART2_Initialize(void)
 {
-    do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
+
+    PIE3bits.RC2IE = 0;
+    EUSART2_SetRxInterruptHandler(EUSART2_Receive_ISR);
+    PIE3bits.TX2IE = 0;
+    EUSART2_SetTxInterruptHandler(EUSART2_Transmit_ISR);
+
+
+
+    BAUD2CON = 0x48;
+
+
+    RC2STA = 0x80;
+
+
+    TX2STA = 0x26;
+
+
+    SP2BRGL = 0x19;
+
+
+    SP2BRGH = 0x0;
+
+
+    EUSART2_SetFramingErrorHandler(EUSART2_DefaultFramingErrorHandler);
+    EUSART2_SetOverrunErrorHandler(EUSART2_DefaultOverrunErrorHandler);
+    EUSART2_SetErrorHandler(EUSART2_DefaultErrorHandler);
+
+    eusart2RxLastError.status = 0;
+
+
+    eusart2TxHead = 0;
+    eusart2TxTail = 0;
+    eusart2TxBufferRemaining = sizeof(eusart2TxBuffer);
+
+    eusart2RxHead = 0;
+    eusart2RxTail = 0;
+    eusart2RxCount = 0;
+
+
+    PIE3bits.RC2IE = 1;
+}
+
+_Bool EUSART2_IsTxReady(void)
+{
+    return (eusart2TxBufferRemaining ? 1 : 0);
+}
+
+_Bool EUSART2_is_tx_ready(void)
+{
+    return EUSART2_IsTxReady();
+}
+
+_Bool EUSART2_IsRxReady(void)
+{
+    return (eusart2RxCount ? 1 : 0);
+}
+
+_Bool EUSART2_is_rx_ready(void)
+{
+    return EUSART2_IsRxReady();
+}
+
+_Bool EUSART2_IsTxDone(void)
+{
+    return TX2STAbits.TRMT;
+}
+
+_Bool EUSART2_is_tx_done(void)
+{
+    return EUSART2_IsTxDone();
+}
+
+eusart2_status_t EUSART2_GetLastStatus(void){
+    return eusart2RxLastError;
+}
+
+eusart2_status_t EUSART2_get_last_status(void){
+    return EUSART2_GetLastStatus();
+}
+
+uint8_t EUSART2_Read(void)
+{
+    uint8_t readValue = 0;
+
+    while(0 == eusart2RxCount)
+    {
+    }
+
+    eusart2RxLastError = eusart2RxStatusBuffer[eusart2RxTail];
+
+    readValue = eusart2RxBuffer[eusart2RxTail++];
+    if(sizeof(eusart2RxBuffer) <= eusart2RxTail)
+    {
+        eusart2RxTail = 0;
+    }
+    PIE3bits.RC2IE = 0;
+    eusart2RxCount--;
+    PIE3bits.RC2IE = 1;
+
+    return readValue;
+}
+
+void EUSART2_Write(uint8_t txData)
+{
+    while(0 == eusart2TxBufferRemaining)
+    {
+    }
+
+    if(0 == PIE3bits.TX2IE)
+    {
+        TX2REG = txData;
+    }
+    else
+    {
+        PIE3bits.TX2IE = 0;
+        eusart2TxBuffer[eusart2TxHead++] = txData;
+        if(sizeof(eusart2TxBuffer) <= eusart2TxHead)
+        {
+            eusart2TxHead = 0;
+        }
+        eusart2TxBufferRemaining--;
+    }
+    PIE3bits.TX2IE = 1;
+}
+
+
+void EUSART2_Transmit_ISR(void)
+{
+
+
+    if(sizeof(eusart2TxBuffer) > eusart2TxBufferRemaining)
+    {
+        TX2REG = eusart2TxBuffer[eusart2TxTail++];
+        if(sizeof(eusart2TxBuffer) <= eusart2TxTail)
+        {
+            eusart2TxTail = 0;
+        }
+        eusart2TxBufferRemaining++;
+    }
+    else
+    {
+        PIE3bits.TX2IE = 0;
+    }
+}
+
+void EUSART2_Receive_ISR(void)
+{
+
+    eusart2RxStatusBuffer[eusart2RxHead].status = 0;
+
+    if(RC2STAbits.FERR){
+        eusart2RxStatusBuffer[eusart2RxHead].ferr = 1;
+        EUSART2_FramingErrorHandler();
+    }
+
+    if(RC2STAbits.OERR){
+        eusart2RxStatusBuffer[eusart2RxHead].oerr = 1;
+        EUSART2_OverrunErrorHandler();
+    }
+
+    if(eusart2RxStatusBuffer[eusart2RxHead].status){
+        EUSART2_ErrorHandler();
+    } else {
+        EUSART2_RxDataHandler();
+    }
+
 
 }
 
-int main(void)
-{
-    SYSTEM_Initialize();
-    Timer0_OverflowCallbackRegister(TMR0_overflow_cb);
+void EUSART2_RxDataHandler(void){
 
-
-    (INTCONbits.GIE = 1);
-
-
-    (INTCONbits.PEIE = 1);
-
-    while(1)
+    eusart2RxBuffer[eusart2RxHead++] = RC2REG;
+    if(sizeof(eusart2RxBuffer) <= eusart2RxHead)
     {
+        eusart2RxHead = 0;
     }
+    eusart2RxCount++;
+}
+
+void EUSART2_DefaultFramingErrorHandler(void){}
+
+void EUSART2_DefaultOverrunErrorHandler(void){
+
+
+    RC2STAbits.CREN = 0;
+    RC2STAbits.CREN = 1;
+
+}
+
+void EUSART2_DefaultErrorHandler(void){
+    EUSART2_RxDataHandler();
+}
+
+void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void)){
+    EUSART2_FramingErrorHandler = interruptHandler;
+}
+
+void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void)){
+    EUSART2_OverrunErrorHandler = interruptHandler;
+}
+
+void EUSART2_SetErrorHandler(void (* interruptHandler)(void)){
+    EUSART2_ErrorHandler = interruptHandler;
+}
+
+void EUSART2_SetTxInterruptHandler(void (* interruptHandler)(void)){
+    EUSART2_TxDefaultInterruptHandler = interruptHandler;
+}
+
+void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void)){
+    EUSART2_RxDefaultInterruptHandler = interruptHandler;
 }

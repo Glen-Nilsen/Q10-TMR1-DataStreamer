@@ -10,9 +10,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "27745
 [; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 27745: extern volatile LATEbits_t LATEbits __attribute__((address(0xF86)));
 [v _LATEbits `VS1206 ~T0 @X0 0 e@3974 ]
+"4 ./mcc_generated_files/system/../data_streamer/data_streamer.h
+[; ;./mcc_generated_files/system/../data_streamer/data_streamer.h: 4: void variableWrite_sendFrame(uint8_t count_8bit, uint16_t count_16bit, uint32_t count_32bit);
+[v _variableWrite_sendFrame `(v ~T0 @X0 0 ef3`uc`us`ul ]
 [p mainexit ]
-"79 ./mcc_generated_files/system/system.h
-[; ;./mcc_generated_files/system/system.h: 79: void SYSTEM_Initialize(void);
+"81 ./mcc_generated_files/system/system.h
+[; ;./mcc_generated_files/system/system.h: 81: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 [v F12748 `(v ~T0 @X0 0 tf ]
 "260 ./mcc_generated_files/system/../timer/tmr0.h
@@ -1724,58 +1727,88 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 37919: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 "40 main.c
-[; ;main.c: 40: void TMR0_overflow_cb(void)
-[v _TMR0_overflow_cb `(v ~T0 @X0 1 ef ]
+[; ;main.c: 40: uint8_t count_8bit = 0;
+[v _count_8bit `uc ~T0 @X0 1 e ]
+[i _count_8bit
+-> -> 0 `i `uc
+]
 "41
-[; ;main.c: 41: {
+[; ;main.c: 41: uint16_t count_16bit = 0;
+[v _count_16bit `us ~T0 @X0 1 e ]
+[i _count_16bit
+-> -> 0 `i `us
+]
+"42
+[; ;main.c: 42: uint32_t count_32bit = 0;
+[v _count_32bit `ul ~T0 @X0 1 e ]
+[i _count_32bit
+-> -> -> 0 `i `l `ul
+]
+"44
+[; ;main.c: 44: void TMR0_overflow_cb(void)
+[v _TMR0_overflow_cb `(v ~T0 @X0 1 ef ]
+"45
+[; ;main.c: 45: {
 {
 [e :U _TMR0_overflow_cb ]
 [f ]
-"42
-[; ;main.c: 42:     do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
-[e :U 1740 ]
+"46
+[; ;main.c: 46:     do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
+[e :U 1743 ]
 {
 [e = . . _LATEbits 0 0 -> ~ -> . . _LATEbits 0 0 `i `uc ]
 }
-[e :U 1739 ]
-"44
-[; ;main.c: 44: }
-[e :UE 1737 ]
+[e :U 1742 ]
+"47
+[; ;main.c: 47:     count_8bit+=100;
+[e =+ _count_8bit -> -> 100 `i `uc ]
+"48
+[; ;main.c: 48:     count_16bit+=100;
+[e =+ _count_16bit -> -> 100 `i `us ]
+"49
+[; ;main.c: 49:     count_32bit+=100;
+[e =+ _count_32bit -> -> -> 100 `i `l `ul ]
+"50
+[; ;main.c: 50:     variableWrite_sendFrame(count_8bit, count_16bit, count_32bit);
+[e ( _variableWrite_sendFrame (3 , , _count_8bit _count_16bit _count_32bit ]
+"52
+[; ;main.c: 52: }
+[e :UE 1740 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"46
-[; ;main.c: 46: int main(void)
+"54
+[; ;main.c: 54: int main(void)
 [v _main `(i ~T0 @X0 1 ef ]
-"47
-[; ;main.c: 47: {
+"55
+[; ;main.c: 55: {
 {
 [e :U _main ]
 [f ]
-"48
-[; ;main.c: 48:     SYSTEM_Initialize();
+"56
+[; ;main.c: 56:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"49
-[; ;main.c: 49:     Timer0_OverflowCallbackRegister(TMR0_overflow_cb);
-[e ( _Timer0_OverflowCallbackRegister (1 &U _TMR0_overflow_cb ]
-"52
-[; ;main.c: 52:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 1 2 -> -> 1 `i `uc ]
-"55
-[; ;main.c: 55:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 1 1 -> -> 1 `i `uc ]
 "57
-[; ;main.c: 57:     while(1)
-[e :U 1743 ]
-"58
-[; ;main.c: 58:     {
-{
-"59
-[; ;main.c: 59:     }
-}
-[e :U 1742 ]
-[e $U 1743  ]
-[e :U 1744 ]
+[; ;main.c: 57:     Timer0_OverflowCallbackRegister(TMR0_overflow_cb);
+[e ( _Timer0_OverflowCallbackRegister (1 &U _TMR0_overflow_cb ]
 "60
-[; ;main.c: 60: }
-[e :UE 1741 ]
+[; ;main.c: 60:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 1 2 -> -> 1 `i `uc ]
+"63
+[; ;main.c: 63:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 1 1 -> -> 1 `i `uc ]
+"65
+[; ;main.c: 65:     while(1)
+[e :U 1746 ]
+"66
+[; ;main.c: 66:     {
+{
+"67
+[; ;main.c: 67:     }
+}
+[e :U 1745 ]
+[e $U 1746  ]
+[e :U 1747 ]
+"68
+[; ;main.c: 68: }
+[e :UE 1744 ]
 }

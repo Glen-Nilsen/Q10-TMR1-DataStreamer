@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=/opt/microchip/xc8/v2.31/pic/dat/en_msgs.txt -cn \
   -h+dist/default/production/Q10-Hello.production.sym \
   --cmf=dist/default/production/Q10-Hello.production.cmf -z -Q18F47Q10 \
-  -o/tmp/xcXAAOGgF --defsym=__MPLAB_BUILD=1 \
+  -o/tmp/xcXcMlGbB --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Q10-Hello.production.map -E1 -ver=XC8 Compiler \
-  --acfsm=1493 -ASTACK=060h-0E1Eh -pstack=STACK -ACODE=00h-01FFFFh \
+  --acfsm=1493 -ASTACK=063h-0E1Eh -pstack=STACK -ACODE=00h-01FFFFh \
   -ACONST=00h-01FFFFh -ASMALLCONST=0F00h-0FFFhx497 \
   -AMEDIUMCONST=0F00h-0FFFFh,010F00h-01FFFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-0E1Eh -ABIGRAM=01h-0E1Eh \
@@ -26,7 +26,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  /tmp/xcXMifiJF.o dist/default/production/Q10-Hello.production.o 
+  /tmp/xcXjOdFIg.o dist/default/production/Q10-Hello.production.o 
 
 Object code version is 3.11
 
@@ -35,67 +35,102 @@ Machine type is 18F47Q10
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXMifiJF.o
+/tmp/xcXjOdFIg.o
                 idloc                            200000   200000      100        0       5
                 config                           300000   300000        C        0       4
-                init                                 4E       4E        4        4       0
+                init                                 D6       D6        4        4       0
                 reset_vec                             0        0        4        0       0
 dist/default/production/Q10-Hello.production.o
-                intcode                               8        8       46        4       0
+                intcode                               8        8       CE        4       0
                 idloc                            200000   200000      100        0       5
                 config                           300000   300000        C        0       4
-                temp                                 13       13        1        1       1
-                smallconst                          F00      F00       14      780       0
-                text13                             111C     111C        2      78A       0
-                text12                             1066     1066       22      78A       0
-                text11                             100A     100A       34      78A       0
-                text9                              10A8     10A8       20      78A       0
-                text8                              1104     1104        E      78A       0
-                text7                              10F6     10F6        E      78A       0
-                text6                              10E8     10E8        E      78A       0
-                text5                               FC4      FC4       46      78A       0
-                text4                               F14      F14       B0      78A       0
-                text3                              10DA     10DA        E      78A       0
-                text2                              103E     103E       28      78A       0
-                text1                              10C8     10C8       12      78A       0
-                text0                              1088     1088       20      78A       0
-                cstackCOMRAM                          D        D        6        1       1
-                cinit                              1112     1112        A      78A       0
-                nvCOMRAM                              1        1        C        1       1
+                temp                                 53       53        1        1       1
+                smallconst                          F00      F00       3C      780       0
+                text29                             1364     1364       2A      79E       0
+                text28                             1498     1498        6      79E       0
+                text27                             14A0     14A0        2      79E       0
+                text26                             1490     1490        8      79E       0
+                text25                              F3C      F3C       C0      79E       0
+                text24                             1292     1292       44      79E       0
+                text23                             13FC     13FC       16      79E       0
+                text22                             11A8     11A8       58      79E       0
+                text21                             130A     130A       30      79E       0
+                text20                             124C     124C       46      79E       0
+                text19                             149E     149E        2      79E       0
+                text18                             1150     1150       58      79E       0
+                text17                             12D6     12D6       34      79E       0
+                text15                             13B0     13B0       20      79E       0
+                text14                             1482     1482        E      79E       0
+                text13                             1474     1474        E      79E       0
+                text12                             1466     1466        E      79E       0
+                text11                             1458     1458        E      79E       0
+                text10                             144A     144A        E      79E       0
+                text9                              10B6     10B6       9A      79E       0
+                text8                              143C     143C        E      79E       0
+                text7                              142E     142E        E      79E       0
+                text6                              1420     1420        E      79E       0
+                text5                              1200     1200       4C      79E       0
+                text4                               FFC      FFC       BA      79E       0
+                text3                              1412     1412        E      79E       0
+                text2                              133A     133A       2A      79E       0
+                text1                              13E6     13E6       16      79E       0
+                text0                              138E     138E       22      79E       0
+                cstackCOMRAM                         42       42       11        1       1
+                cstackBANK0                          60       60        3       60       1
+                bssCOMRAM                             1        1       25        1       1
+                cinit                              13D0     13D0       16      79E       0
+                nvCOMRAM                             26       26       1C        1       1
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
-                intcode                               8        8       46         0
-                init                                 4E       4E        4         0
+                intcode                               8        8       CE         0
+                init                                 D6       D6        4         0
                 reset_vec                             0        0        4         0
-                text13                             111C     111C        2         0
-                text12                             1066     1066       22         0
-                text11                             100A     100A       34         0
-                text9                              10A8     10A8       20         0
-                text8                              1104     1104        E         0
-                text7                              10F6     10F6        E         0
-                text6                              10E8     10E8        E         0
-                text5                               FC4      FC4       46         0
-                text4                               F14      F14       B0         0
-                text3                              10DA     10DA        E         0
-                text2                              103E     103E       28         0
-                text1                              10C8     10C8       12         0
-                text0                              1088     1088       20         0
-                cinit                              1112     1112        A         0
+                text29                             1364     1364       2A         0
+                text28                             1498     1498        6         0
+                text27                             14A0     14A0        2         0
+                text26                             1490     1490        8         0
+                text25                              F3C      F3C       C0         0
+                text24                             1292     1292       44         0
+                text23                             13FC     13FC       16         0
+                text22                             11A8     11A8       58         0
+                text21                             130A     130A       30         0
+                text20                             124C     124C       46         0
+                text19                             149E     149E        2         0
+                text18                             1150     1150       58         0
+                text17                             12D6     12D6       34         0
+                text15                             13B0     13B0       20         0
+                text14                             1482     1482        E         0
+                text13                             1474     1474        E         0
+                text12                             1466     1466        E         0
+                text11                             1458     1458        E         0
+                text10                             144A     144A        E         0
+                text9                              10B6     10B6       9A         0
+                text8                              143C     143C        E         0
+                text7                              142E     142E        E         0
+                text6                              1420     1420        E         0
+                text5                              1200     1200       4C         0
+                text4                               FFC      FFC       BA         0
+                text3                              1412     1412        E         0
+                text2                              133A     133A       2A         0
+                text1                              13E6     13E6       16         0
+                text0                              138E     138E       22         0
+                cinit                              13D0     13D0       16         0
 
         CLASS   CONST          
 
         CLASS   SMALLCONST     
-                smallconst                          F00      F00       14         0
+                smallconst                          F00      F00       3C         0
 
         CLASS   MEDIUMCONST    
 
         CLASS   COMRAM         
-                temp                                 13       13        1         1
-                cstackCOMRAM                          D        D        6         1
-                nvCOMRAM                              1        1        C         1
+                temp                                 53       53        1         1
+                cstackCOMRAM                         42       42       11         1
+                bssCOMRAM                             1        1       25         1
+                nvCOMRAM                             26       26       1C         1
 
         CLASS   ABS1           
 
@@ -104,6 +139,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   RAM            
 
         CLASS   BANK0          
+                cstackBANK0                          60       60        3         1
 
         CLASS   BANK1          
 
@@ -149,17 +185,18 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                text4                          000F14  00020A  00111E       78A       0  CODE    
-                smallconst                     000F00  000014  000F14       780       0  SMALLCON
-                intcode                        000008  00004A  000052         4       0  CODE    
+                text25                         000F3C  000566  0014A2       79E       0  CODE    
+                cstackBANK0                    000060  000003  000063        60       1  BANK0   
+                smallconst                     000F00  00003C  000F3C       780       0  SMALLCON
+                intcode                        000008  0000D2  0000DA         4       0  CODE    
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                nvCOMRAM                       000001  000013  000014         1       1  COMRAM  
+                bssCOMRAM                      000001  000053  000054         1       1  COMRAM  
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            000060-0000FF               A0
+        BANK0            000063-0000FF               9D
         BANK1            000100-0001FF              100
         BANK10           000A00-000AFF              100
         BANK11           000B00-000BFF              100
@@ -174,50 +211,81 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
-        BIGRAM           000014-000E1E              E0B
+        BIGRAM           000054-00005F                C
+                         000063-000E1E              DBC
         CODE             000004-000007                4
-                         000052-000EFF              EAE
-                         00111E-01FFFF            1EEE2
-        COMRAM           000014-00005F               4C
+                         0000DA-000EFF              E26
+                         0014A2-01FFFF            1EB5E
+        COMRAM           000054-00005F                C
         CONST            000004-000007                4
-                         000052-000EFF              EAE
-                         00111E-01FFFF            1EEE2
+                         0000DA-000EFF              E26
+                         0014A2-01FFFF            1EB5E
         EEDATA           310000-3103FF              400
-        MEDIUMCONST      00111E-00FFFF             EEE2
+        MEDIUMCONST      0014A2-00FFFF             EB5E
                          010F00-01FFFF             F100
-        RAM              000060-000E1E              100
+        RAM              000063-000E1E              100
         SFR              000E1F-000FFF               E1
-        SMALLCONST       00111E-01FFFF              100
-        STACK            000060-000E1E              DBF
+        SMALLCONST       0014A2-01FFFF              100
+        STACK            000063-000E1E              DBC
 
                                   Symbol Table
 
-INT0_SetInterruptHandler@InterruptHandler       cstackCOMRAM 000010
-INT1_SetInterruptHandler@InterruptHandler       cstackCOMRAM 000010
-INT2_SetInterruptHandler@InterruptHandler       cstackCOMRAM 000010
-Timer0_OverflowCallbackRegister@CallbackHandler cstackCOMRAM 000010
+EUSART2_SetErrorHandler@interruptHandler        cstackBANK0  000060
+EUSART2_SetFramingErrorHandler@interruptHandler cstackBANK0  000060
+EUSART2_SetOverrunErrorHandler@interruptHandler cstackBANK0  000060
+EUSART2_SetRxInterruptHandler@interruptHandler  cstackBANK0  000060
+EUSART2_SetTxInterruptHandler@interruptHandler  cstackBANK0  000060
+EUSART2_Write@txData                            cstackCOMRAM 000042
+INT0_SetInterruptHandler@InterruptHandler       cstackBANK0  000060
+INT1_SetInterruptHandler@InterruptHandler       cstackBANK0  000060
+INT2_SetInterruptHandler@InterruptHandler       cstackBANK0  000060
+Timer0_OverflowCallbackRegister@CallbackHandler cstackBANK0  000060
 _ANSELA                                         (abs)        000F0C
 _ANSELB                                         (abs)        000F14
 _ANSELC                                         (abs)        000F1C
 _ANSELD                                         (abs)        000F21
 _ANSELE                                         (abs)        000F29
-_CLOCK_Initialize                               text9        0010A8
+_BAUD2CON                                       (abs)        000E9A
+_CLOCK_Initialize                               text15       0013B0
+_EUSART2_DefaultErrorHandler                    text28       001498
+_EUSART2_DefaultFramingErrorHandler             text27       0014A0
+_EUSART2_DefaultOverrunErrorHandler             text26       001490
+_EUSART2_ErrorHandler                           nvCOMRAM     000026
+_EUSART2_FramingErrorHandler                    nvCOMRAM     00002C
+_EUSART2_Initialize                             text9        0010B6
+_EUSART2_Interface                              smallconst   000F01
+_EUSART2_IsRxReady                              (abs)        000000
+_EUSART2_IsTxDone                               text23       0013FC
+_EUSART2_IsTxReady                              (abs)        000000
+_EUSART2_OverrunErrorHandler                    nvCOMRAM     000029
+_EUSART2_Read                                   (abs)        000000
+_EUSART2_Receive_ISR                            text25       000F3C
+_EUSART2_RxDataHandler                          text29       001364
+_EUSART2_RxDefaultInterruptHandler              nvCOMRAM     000038
+_EUSART2_SetErrorHandler                        text14       001482
+_EUSART2_SetFramingErrorHandler                 text13       001474
+_EUSART2_SetOverrunErrorHandler                 text12       001466
+_EUSART2_SetRxInterruptHandler                  text11       001458
+_EUSART2_SetTxInterruptHandler                  text10       00144A
+_EUSART2_Transmit_ISR                           text24       001292
+_EUSART2_TxDefaultInterruptHandler              nvCOMRAM     00003B
+_EUSART2_Write                                  text22       0011A8
 _INLVLA                                         (abs)        000F08
 _INLVLB                                         (abs)        000F10
 _INLVLC                                         (abs)        000F18
 _INLVLD                                         (abs)        000F1D
 _INLVLE                                         (abs)        000F25
 _INT0_DefaultInterruptHandler                   (abs)        000000
-_INT0_InterruptHandler                          nvCOMRAM     000007
-_INT0_SetInterruptHandler                       text8        001104
+_INT0_InterruptHandler                          nvCOMRAM     000035
+_INT0_SetInterruptHandler                       text8        00143C
 _INT1_DefaultInterruptHandler                   (abs)        000000
-_INT1_InterruptHandler                          nvCOMRAM     000004
-_INT1_SetInterruptHandler                       text7        0010F6
+_INT1_InterruptHandler                          nvCOMRAM     000032
+_INT1_SetInterruptHandler                       text7        00142E
 _INT2_DefaultInterruptHandler                   (abs)        000000
-_INT2_InterruptHandler                          nvCOMRAM     000001
-_INT2_SetInterruptHandler                       text6        0010E8
+_INT2_InterruptHandler                          nvCOMRAM     00002F
+_INT2_SetInterruptHandler                       text6        001420
 _INTCONbits                                     (abs)        000FF2
-_INTERRUPT_Initialize                           text5        000FC4
+_INTERRUPT_Initialize                           text5        001200
 _INTERRUPT_InterruptManager                     intcode      000008
 _IOCAF                                          (abs)        000F05
 _IOCAN                                          (abs)        000F06
@@ -250,32 +318,44 @@ _OSCFRQ                                         (abs)        000ED9
 _OSCSTAT                                        (abs)        000ED6
 _OSCTUNE                                        (abs)        000ED8
 _PIE0bits                                       (abs)        000EBD
-_PIN_MANAGER_Initialize                         text4        000F14
+_PIE3bits                                       (abs)        000EC0
+_PIN_MANAGER_Initialize                         text4        000FFC
 _PIR0bits                                       (abs)        000EC5
+_PIR3bits                                       (abs)        000EC8
+_RC2REG                                         (abs)        000E94
+_RC2STA                                         (abs)        000E98
+_RC2STAbits                                     (abs)        000E98
+_RD0PPS                                         (abs)        000EFA
+_RX2PPS                                         (abs)        000E88
 _SLRCONA                                        (abs)        000F09
 _SLRCONB                                        (abs)        000F11
 _SLRCONC                                        (abs)        000F19
 _SLRCOND                                        (abs)        000F1E
 _SLRCONE                                        (abs)        000F26
-_SYSTEM_Initialize                              text1        0010C8
+_SP2BRGH                                        (abs)        000E97
+_SP2BRGL                                        (abs)        000E96
+_SYSTEM_Initialize                              text1        0013E6
 _T0CKIPPS                                       (abs)        000E9F
 _T0CON0                                         (abs)        000FD4
 _T0CON0bits                                     (abs)        000FD4
 _T0CON1                                         (abs)        000FD5
 _TMR0H                                          (abs)        000FD3
 _TMR0L                                          (abs)        000FD2
-_TMR0_overflow_cb                               text12       001066
+_TMR0_overflow_cb                               text18       001150
 _TRISA                                          (abs)        000F87
 _TRISB                                          (abs)        000F88
 _TRISC                                          (abs)        000F89
 _TRISD                                          (abs)        000F8A
 _TRISE                                          (abs)        000F8B
-_Timer0                                         smallconst   000F01
-_Timer0_DefaultOverflowCallback                 text13       00111C
-_Timer0_Initialize                              text2        00103E
-_Timer0_OverflowCallback                        nvCOMRAM     00000A
-_Timer0_OverflowCallbackRegister                text3        0010DA
-_Timer0_OverflowISR                             text11       00100A
+_TX2REG                                         (abs)        000E95
+_TX2STA                                         (abs)        000E99
+_TX2STAbits                                     (abs)        000E99
+_Timer0                                         smallconst   000F28
+_Timer0_DefaultOverflowCallback                 text19       00149E
+_Timer0_Initialize                              text2        00133A
+_Timer0_OverflowCallback                        nvCOMRAM     00003E
+_Timer0_OverflowCallbackRegister                text3        001412
+_Timer0_OverflowISR                             text17       0012D6
 _Timer0_Start                                   (abs)        000000
 _Timer0_Stop                                    (abs)        000000
 _Timer0_Write                                   (abs)        000000
@@ -305,11 +385,13 @@ __Hbigbss                                       bigbss       000000
 __Hbigdata                                      bigdata      000000
 __Hbigram                                       bigram       000000
 __Hbss                                          bss          000000
+__HbssCOMRAM                                    bssCOMRAM    000000
 __Hcinit                                        cinit        000000
 __Hclrtext                                      clrtext      000000
 __Hcomram                                       comram       000000
 __Hconfig                                       config       30000C
 __Hconst                                        const        000000
+__HcstackBANK0                                  cstackBANK0  000000
 __HcstackCOMRAM                                 cstackCOMRAM 000000
 __Hdata                                         data         000000
 __Heeprom_data                                  eeprom_data  000000
@@ -319,10 +401,10 @@ __Hibigdata                                     ibigdata     000000
 __Hidata                                        idata        000000
 __Hidloc                                        idloc        200100
 __Hifardata                                     ifardata     000000
-__Hinit                                         init         000052
-__Hintcode                                      intcode      00004E
+__Hinit                                         init         0000DA
+__Hintcode                                      intcode      0000D6
 __Hintcode_body                                 intcode_body 000000
-__Hintcodelo                                    intcodelo    00004E
+__Hintcodelo                                    intcodelo    0000D6
 __Hintentry                                     intentry     000000
 __Hintret                                       intret       000000
 __Hintsave_regs                                 intsave_regs 000000
@@ -333,7 +415,7 @@ __HnvFARRAM                                     nvFARRAM     000000
 __Hnvbit                                        nvbit        000000
 __Hnvrram                                       nvrram       000000
 __Hparam                                        rparam       000000
-__Hpowerup                                      powerup      00004E
+__Hpowerup                                      powerup      0000D6
 __Hram                                          ram          000000
 __Hramtop                                       ramtop       000F00
 __Hrbit                                         rbit         000000
@@ -342,23 +424,39 @@ __Hrdata                                        rdata        000000
 __Hreset_vec                                    reset_vec    000004
 __Hrparam                                       rparam       000000
 __Hsfr                                          sfr          000000
-__Hsmallconst                                   smallconst   000F14
-__Hspace_0                                      (abs)        00111E
-__Hspace_1                                      (abs)        000014
+__Hsmallconst                                   smallconst   000F3C
+__Hspace_0                                      (abs)        0014A2
+__Hspace_1                                      (abs)        000063
 __Hspace_2                                      (abs)        000000
 __Hspace_4                                      (abs)        60000C
 __Hstack                                        stack        000000
 __Hstruct                                       struct       000000
-__Htemp                                         temp         000014
+__Htemp                                         temp         000054
 __Htext                                         text         000000
 __Htext0                                        text0        000000
 __Htext1                                        text1        000000
+__Htext10                                       text10       000000
 __Htext11                                       text11       000000
 __Htext12                                       text12       000000
 __Htext13                                       text13       000000
 __Htext14                                       text14       000000
+__Htext15                                       text15       000000
+__Htext17                                       text17       000000
+__Htext18                                       text18       000000
+__Htext19                                       text19       000000
 __Htext2                                        text2        000000
+__Htext20                                       text20       000000
+__Htext21                                       text21       000000
+__Htext22                                       text22       000000
+__Htext23                                       text23       000000
+__Htext24                                       text24       000000
+__Htext25                                       text25       000000
+__Htext26                                       text26       000000
+__Htext27                                       text27       000000
+__Htext28                                       text28       000000
+__Htext29                                       text29       000000
 __Htext3                                        text3        000000
+__Htext30                                       text30       000000
 __Htext4                                        text4        000000
 __Htext5                                        text5        000000
 __Htext6                                        text6        000000
@@ -386,11 +484,13 @@ __Lbigbss                                       bigbss       000000
 __Lbigdata                                      bigdata      000000
 __Lbigram                                       bigram       000000
 __Lbss                                          bss          000000
+__LbssCOMRAM                                    bssCOMRAM    000000
 __Lcinit                                        cinit        000000
 __Lclrtext                                      clrtext      000000
 __Lcomram                                       comram       000000
 __Lconfig                                       config       000000
 __Lconst                                        const        000000
+__LcstackBANK0                                  cstackBANK0  000000
 __LcstackCOMRAM                                 cstackCOMRAM 000000
 __Ldata                                         data         000000
 __Leeprom_data                                  eeprom_data  000000
@@ -400,10 +500,10 @@ __Libigdata                                     ibigdata     000000
 __Lidata                                        idata        000000
 __Lidloc                                        idloc        000000
 __Lifardata                                     ifardata     000000
-__Linit                                         init         00004E
+__Linit                                         init         0000D6
 __Lintcode                                      intcode      000008
 __Lintcode_body                                 intcode_body 000000
-__Lintcodelo                                    intcodelo    00004E
+__Lintcodelo                                    intcodelo    0000D6
 __Lintentry                                     intentry     000000
 __Lintret                                       intret       000000
 __Lintsave_regs                                 intsave_regs 000000
@@ -414,7 +514,7 @@ __LnvFARRAM                                     nvFARRAM     000000
 __Lnvbit                                        nvbit        000000
 __Lnvrram                                       nvrram       000000
 __Lparam                                        rparam       000000
-__Lpowerup                                      powerup      00004E
+__Lpowerup                                      powerup      0000D6
 __Lram                                          ram          000000
 __Lramtop                                       ramtop       000F00
 __Lrbit                                         rbit         000000
@@ -430,24 +530,40 @@ __Lspace_2                                      (abs)        000000
 __Lspace_4                                      (abs)        000000
 __Lstack                                        stack        000000
 __Lstruct                                       struct       000000
-__Ltemp                                         temp         000013
+__Ltemp                                         temp         000053
 __Ltext                                         text         000000
 __Ltext0                                        text0        000000
 __Ltext1                                        text1        000000
+__Ltext10                                       text10       000000
 __Ltext11                                       text11       000000
 __Ltext12                                       text12       000000
 __Ltext13                                       text13       000000
 __Ltext14                                       text14       000000
+__Ltext15                                       text15       000000
+__Ltext17                                       text17       000000
+__Ltext18                                       text18       000000
+__Ltext19                                       text19       000000
 __Ltext2                                        text2        000000
+__Ltext20                                       text20       000000
+__Ltext21                                       text21       000000
+__Ltext22                                       text22       000000
+__Ltext23                                       text23       000000
+__Ltext24                                       text24       000000
+__Ltext25                                       text25       000000
+__Ltext26                                       text26       000000
+__Ltext27                                       text27       000000
+__Ltext28                                       text28       000000
+__Ltext29                                       text29       000000
 __Ltext3                                        text3        000000
+__Ltext30                                       text30       000000
 __Ltext4                                        text4        000000
 __Ltext5                                        text5        000000
 __Ltext6                                        text6        000000
 __Ltext7                                        text7        000000
 __Ltext8                                        text8        000000
 __Ltext9                                        text9        000000
-__S0                                            (abs)        00111E
-__S1                                            (abs)        000014
+__S0                                            (abs)        0014A2
+__S1                                            (abs)        000063
 __S2                                            (abs)        000000
 __S4                                            (abs)        000000
 __S5                                            (abs)        000000
@@ -458,45 +574,94 @@ ___rparam_used                                  (abs)        000001
 ___sp                                           stack        000000
 __accesstop                                     (abs)        000060
 __activetblptr                                  (abs)        000003
-__end_of_CLOCK_Initialize                       text9        0010C8
-__end_of_INT0_SetInterruptHandler               text8        001112
-__end_of_INT1_SetInterruptHandler               text7        001104
-__end_of_INT2_SetInterruptHandler               text6        0010F6
-__end_of_INTERRUPT_Initialize                   text5        00100A
-__end_of_INTERRUPT_InterruptManager             intcode      00004E
-__end_of_PIN_MANAGER_Initialize                 text4        000FC4
-__end_of_SYSTEM_Initialize                      text1        0010DA
-__end_of_TMR0_overflow_cb                       text12       001088
-__end_of_Timer0                                 smallconst   000F13
-__end_of_Timer0_DefaultOverflowCallback         text13       00111E
-__end_of_Timer0_Initialize                      text2        001066
-__end_of_Timer0_OverflowCallbackRegister        text3        0010E8
-__end_of_Timer0_OverflowISR                     text11       00103E
-__end_of__initialization                        cinit        001112
-__end_of_main                                   text0        0010A8
-__initialization                                cinit        001112
+__end_of_CLOCK_Initialize                       text15       0013D0
+__end_of_EUSART2_DefaultErrorHandler            text28       00149E
+__end_of_EUSART2_DefaultFramingErrorHandler     text27       0014A2
+__end_of_EUSART2_DefaultOverrunErrorHandler     text26       001498
+__end_of_EUSART2_Initialize                     text9        001150
+__end_of_EUSART2_Interface                      smallconst   000F28
+__end_of_EUSART2_IsTxDone                       text23       001412
+__end_of_EUSART2_Receive_ISR                    text25       000FFC
+__end_of_EUSART2_RxDataHandler                  text29       00138E
+__end_of_EUSART2_SetErrorHandler                text14       001490
+__end_of_EUSART2_SetFramingErrorHandler         text13       001482
+__end_of_EUSART2_SetOverrunErrorHandler         text12       001474
+__end_of_EUSART2_SetRxInterruptHandler          text11       001466
+__end_of_EUSART2_SetTxInterruptHandler          text10       001458
+__end_of_EUSART2_Transmit_ISR                   text24       0012D6
+__end_of_EUSART2_Write                          text22       001200
+__end_of_INT0_SetInterruptHandler               text8        00144A
+__end_of_INT1_SetInterruptHandler               text7        00143C
+__end_of_INT2_SetInterruptHandler               text6        00142E
+__end_of_INTERRUPT_Initialize                   text5        00124C
+__end_of_INTERRUPT_InterruptManager             intcode      0000D6
+__end_of_PIN_MANAGER_Initialize                 text4        0010B6
+__end_of_SYSTEM_Initialize                      text1        0013FC
+__end_of_TMR0_overflow_cb                       text18       0011A8
+__end_of_Timer0                                 smallconst   000F3A
+__end_of_Timer0_DefaultOverflowCallback         text19       0014A0
+__end_of_Timer0_Initialize                      text2        001364
+__end_of_Timer0_OverflowCallbackRegister        text3        001420
+__end_of_Timer0_OverflowISR                     text17       00130A
+__end_of__initialization                        cinit        0013DC
+__end_of_main                                   text0        0013B0
+__end_of_variableWrite_sendFrame                text20       001292
+__end_of_variableWrite_sendValue                text21       00133A
+__initialization                                cinit        0013D0
 __mediumconst                                   mediumconst  000000
-__pcinit                                        cinit        001112
-__pcstackCOMRAM                                 cstackCOMRAM 00000D
+__pbssCOMRAM                                    bssCOMRAM    000001
+__pcinit                                        cinit        0013D0
+__pcstackBANK0                                  cstackBANK0  000060
+__pcstackCOMRAM                                 cstackCOMRAM 000042
 __pintcode                                      intcode      000008
-__pnvCOMRAM                                     nvCOMRAM     000001
+__pnvCOMRAM                                     nvCOMRAM     000026
 __psmallconst                                   smallconst   000F00
-__ptext0                                        text0        001088
-__ptext1                                        text1        0010C8
-__ptext11                                       text11       00100A
-__ptext12                                       text12       001066
-__ptext13                                       text13       00111C
-__ptext14                                       text14       000000
-__ptext2                                        text2        00103E
-__ptext3                                        text3        0010DA
-__ptext4                                        text4        000F14
-__ptext5                                        text5        000FC4
-__ptext6                                        text6        0010E8
-__ptext7                                        text7        0010F6
-__ptext8                                        text8        001104
-__ptext9                                        text9        0010A8
+__ptext0                                        text0        00138E
+__ptext1                                        text1        0013E6
+__ptext10                                       text10       00144A
+__ptext11                                       text11       001458
+__ptext12                                       text12       001466
+__ptext13                                       text13       001474
+__ptext14                                       text14       001482
+__ptext15                                       text15       0013B0
+__ptext17                                       text17       0012D6
+__ptext18                                       text18       001150
+__ptext19                                       text19       00149E
+__ptext2                                        text2        00133A
+__ptext20                                       text20       00124C
+__ptext21                                       text21       00130A
+__ptext22                                       text22       0011A8
+__ptext23                                       text23       0013FC
+__ptext24                                       text24       001292
+__ptext25                                       text25       000F3C
+__ptext26                                       text26       001490
+__ptext27                                       text27       0014A0
+__ptext28                                       text28       001498
+__ptext29                                       text29       001364
+__ptext3                                        text3        001412
+__ptext30                                       text30       000000
+__ptext4                                        text4        000FFC
+__ptext5                                        text5        001200
+__ptext6                                        text6        001420
+__ptext7                                        text7        00142E
+__ptext8                                        text8        00143C
+__ptext9                                        text9        0010B6
 __ramtop                                        ramtop       000F00
 __size_of_CLOCK_Initialize                      (abs)        000000
+__size_of_EUSART2_DefaultErrorHandler           (abs)        000000
+__size_of_EUSART2_DefaultFramingErrorHandler    (abs)        000000
+__size_of_EUSART2_DefaultOverrunErrorHandler    (abs)        000000
+__size_of_EUSART2_Initialize                    (abs)        000000
+__size_of_EUSART2_IsTxDone                      (abs)        000000
+__size_of_EUSART2_Receive_ISR                   (abs)        000000
+__size_of_EUSART2_RxDataHandler                 (abs)        000000
+__size_of_EUSART2_SetErrorHandler               (abs)        000000
+__size_of_EUSART2_SetFramingErrorHandler        (abs)        000000
+__size_of_EUSART2_SetOverrunErrorHandler        (abs)        000000
+__size_of_EUSART2_SetRxInterruptHandler         (abs)        000000
+__size_of_EUSART2_SetTxInterruptHandler         (abs)        000000
+__size_of_EUSART2_Transmit_ISR                  (abs)        000000
+__size_of_EUSART2_Write                         (abs)        000000
 __size_of_INT0_SetInterruptHandler              (abs)        000000
 __size_of_INT1_SetInterruptHandler              (abs)        000000
 __size_of_INT2_SetInterruptHandler              (abs)        000000
@@ -510,36 +675,59 @@ __size_of_Timer0_Initialize                     (abs)        000000
 __size_of_Timer0_OverflowCallbackRegister       (abs)        000000
 __size_of_Timer0_OverflowISR                    (abs)        000000
 __size_of_main                                  (abs)        000000
+__size_of_variableWrite_sendFrame               (abs)        000000
+__size_of_variableWrite_sendValue               (abs)        000000
 __smallconst                                    smallconst   000F00
-_main                                           text0        001088
-btemp                                           temp         000013
-end_of_initialization                           cinit        001112
-int$flags                                       temp         000013
+_count_16bit                                    bssCOMRAM    00001D
+_count_32bit                                    bssCOMRAM    000019
+_count_8bit                                     bssCOMRAM    000025
+_eusart2RxBuffer                                bssCOMRAM    000009
+_eusart2RxCount                                 bssCOMRAM    000020
+_eusart2RxHead                                  bssCOMRAM    000022
+_eusart2RxLastError                             bssCOMRAM    00001F
+_eusart2RxStatusBuffer                          bssCOMRAM    000001
+_eusart2RxTail                                  bssCOMRAM    000021
+_eusart2TxBuffer                                bssCOMRAM    000011
+_eusart2TxBufferRemaining                       nvCOMRAM     000041
+_eusart2TxHead                                  bssCOMRAM    000024
+_eusart2TxTail                                  bssCOMRAM    000023
+_main                                           text0        00138E
+_variableWrite_sendFrame                        text20       00124C
+_variableWrite_sendValue                        text21       00130A
+btemp                                           temp         000053
+end_of_initialization                           cinit        0013DC
+int$flags                                       temp         000053
 intlevel0                                       text         000000
 intlevel1                                       text         000000
 intlevel2                                       text         000000
 intlevel3                                       text         000000
 stackhi                                         (abs)        000E1E
-stacklo                                         (abs)        000060
-start                                           init         00004E
-start_initialization                            cinit        001112
-ttemp5                                          temp         000014
-ttemp6                                          temp         000017
-ttemp7                                          temp         00001B
-wtemp8                                          temp         000014
+stacklo                                         (abs)        000063
+start                                           init         0000D6
+start_initialization                            cinit        0013D0
+ttemp5                                          temp         000054
+ttemp6                                          temp         000057
+ttemp7                                          temp         00005B
+variableWrite_sendFrame@count_16bit             cstackCOMRAM 000047
+variableWrite_sendFrame@count_32bit             cstackCOMRAM 000049
+variableWrite_sendFrame@count_8bit              cstackCOMRAM 00004D
+variableWrite_sendValue@byte_ptr                cstackCOMRAM 000043
+variableWrite_sendValue@i                       cstackCOMRAM 000046
+variableWrite_sendValue@num_bytes               cstackCOMRAM 000045
+wtemp8                                          temp         000054
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 46 in file "main.c"
+		line 54 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  2  130[None  ] int 
+                  2  144[None  ] int 
  Registers used:
 		wreg, status,2, status,0, cstack
  Tracked objects:
@@ -552,7 +740,7 @@ FUNCTION INFORMATION:
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
- Hardware stack levels required when called:    6
+ Hardware stack levels required when called:    9
  This function calls:
 		_SYSTEM_Initialize
 		_Timer0_OverflowCallbackRegister
@@ -583,9 +771,10 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    5
+ Hardware stack levels required when called:    8
  This function calls:
 		_CLOCK_Initialize
+		_EUSART2_Initialize
 		_INTERRUPT_Initialize
 		_PIN_MANAGER_Initialize
 		_Timer0_Initialize
@@ -616,7 +805,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		_Timer0_OverflowCallbackRegister
  This function is called by:
@@ -628,7 +817,7 @@ Total ram usage:        0 bytes
  Defined at:
 		line 139 in file "mcc_generated_files/timer/src/tmr0.c"
  Parameters:    Size  Location     Type
-  CallbackHand    3    3[COMRAM] PTR FTN()void 
+  CallbackHand    3    0[BANK0 ] PTR FTN()void 
 		 -> Timer0_DefaultOverflowCallback(1), TMR0_overflow_cb(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -641,13 +830,13 @@ Total ram usage:        0 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    3
+ Hardware stack levels required when called:    6
  This function calls:
 		Nothing
  This function is called by:
@@ -678,7 +867,7 @@ Total ram usage:        3 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    3
+ Hardware stack levels required when called:    6
  This function calls:
 		Nothing
  This function is called by:
@@ -708,7 +897,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		_INT0_SetInterruptHandler
 		_INT1_SetInterruptHandler
@@ -720,9 +909,9 @@ Total ram usage:        0 bytes
 
  *************** function _INT2_SetInterruptHandler *****************
  Defined at:
-		line 186 in file "mcc_generated_files/system/src/interrupt.c"
+		line 194 in file "mcc_generated_files/system/src/interrupt.c"
  Parameters:    Size  Location     Type
-  InterruptHan    3    3[COMRAM] PTR FTN()void 
+  InterruptHan    3    0[BANK0 ] PTR FTN()void 
 		 -> INT2_DefaultInterruptHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -735,13 +924,13 @@ Total ram usage:        0 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    3
+ Hardware stack levels required when called:    6
  This function calls:
 		Nothing
  This function is called by:
@@ -751,9 +940,9 @@ Total ram usage:        3 bytes
 
  *************** function _INT1_SetInterruptHandler *****************
  Defined at:
-		line 160 in file "mcc_generated_files/system/src/interrupt.c"
+		line 168 in file "mcc_generated_files/system/src/interrupt.c"
  Parameters:    Size  Location     Type
-  InterruptHan    3    3[COMRAM] PTR FTN()void 
+  InterruptHan    3    0[BANK0 ] PTR FTN()void 
 		 -> INT1_DefaultInterruptHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -766,13 +955,13 @@ Total ram usage:        3 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    3
+ Hardware stack levels required when called:    6
  This function calls:
 		Nothing
  This function is called by:
@@ -782,9 +971,9 @@ Total ram usage:        3 bytes
 
  *************** function _INT0_SetInterruptHandler *****************
  Defined at:
-		line 134 in file "mcc_generated_files/system/src/interrupt.c"
+		line 142 in file "mcc_generated_files/system/src/interrupt.c"
  Parameters:    Size  Location     Type
-  InterruptHan    3    3[COMRAM] PTR FTN()void 
+  InterruptHan    3    0[BANK0 ] PTR FTN()void 
 		 -> INT0_DefaultInterruptHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -797,17 +986,206 @@ Total ram usage:        3 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    3
+ Hardware stack levels required when called:    6
  This function calls:
 		Nothing
  This function is called by:
 		_INTERRUPT_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_Initialize *****************
+ Defined at:
+		line 115 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_EUSART2_SetErrorHandler
+		_EUSART2_SetFramingErrorHandler
+		_EUSART2_SetOverrunErrorHandler
+		_EUSART2_SetRxInterruptHandler
+		_EUSART2_SetTxInterruptHandler
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_SetTxInterruptHandler *****************
+ Defined at:
+		line 322 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+  interruptHan    3    0[BANK0 ] PTR FTN()void 
+		 -> EUSART2_Transmit_ISR(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_SetRxInterruptHandler *****************
+ Defined at:
+		line 326 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+  interruptHan    3    0[BANK0 ] PTR FTN()void 
+		 -> EUSART2_Receive_ISR(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_SetOverrunErrorHandler *****************
+ Defined at:
+		line 314 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+  interruptHan    3    0[BANK0 ] PTR FTN()void 
+		 -> EUSART2_DefaultOverrunErrorHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_SetFramingErrorHandler *****************
+ Defined at:
+		line 310 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+  interruptHan    3    0[BANK0 ] PTR FTN()void 
+		 -> EUSART2_DefaultFramingErrorHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_SetErrorHandler *****************
+ Defined at:
+		line 318 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+  interruptHan    3    0[BANK0 ] PTR FTN()void 
+		 -> EUSART2_DefaultErrorHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
  This function uses a non-reentrant model
 
 
@@ -833,7 +1211,7 @@ Total ram usage:        3 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    3
+ Hardware stack levels required when called:    6
  This function calls:
 		Nothing
  This function is called by:
@@ -851,7 +1229,7 @@ Total ram usage:        0 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, pclath, tosl, cstack
+		wreg, fsr2l, fsr2h, status,2, status,0, pclath, tosl, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -859,12 +1237,15 @@ Total ram usage:        0 bytes
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    2
+ Hardware stack levels required when called:    5
  This function calls:
+		Absolute function
+		_EUSART2_Receive_ISR
+		_EUSART2_Transmit_ISR
 		_Timer0_OverflowISR
  This function is called by:
 		Interrupt level 2
@@ -881,7 +1262,7 @@ Total ram usage:        2 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, pclath, tosl, cstack
+		wreg, fsr2l, fsr2h, status,2, status,0, pclath, tosl, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -893,7 +1274,7 @@ Total ram usage:        2 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    1
+ Hardware stack levels required when called:    4
  This function calls:
 		Absolute function
 		_TMR0_overflow_cb
@@ -905,7 +1286,7 @@ Total ram usage:        0 bytes
 
  *************** function _TMR0_overflow_cb *****************
  Defined at:
-		line 40 in file "main.c"
+		line 44 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -913,7 +1294,7 @@ Total ram usage:        0 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -925,8 +1306,9 @@ Total ram usage:        0 bytes
       Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        1 bytes
  Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
  This function calls:
-		Nothing
+		_variableWrite_sendFrame
  This function is called by:
 		_main
 		_Timer0_OverflowISR
@@ -963,51 +1345,388 @@ Total ram usage:        0 bytes
  This function uses a non-reentrant model
 
 
+ *************** function _variableWrite_sendFrame *****************
+ Defined at:
+		line 19 in file "mcc_generated_files/data_streamer/src/data_streamer.c"
+ Parameters:    Size  Location     Type
+  count_8bit      1    wreg     unsigned char 
+  count_16bit     2    5[COMRAM] unsigned short 
+  count_32bit     4    7[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  count_8bit      1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_EUSART2_IsTxDone
+		_EUSART2_Write
+		_variableWrite_sendValue
+ This function is called by:
+		_TMR0_overflow_cb
+ This function uses a non-reentrant model
+
+
+ *************** function _variableWrite_sendValue *****************
+ Defined at:
+		line 11 in file "mcc_generated_files/data_streamer/src/data_streamer.c"
+ Parameters:    Size  Location     Type
+  byte_ptr        2    1[COMRAM] PTR unsigned char 
+		 -> variableWrite_sendFrame@count_32bit(4), 
+  num_bytes       1    3[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  i               1    4[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_EUSART2_Write
+ This function is called by:
+		_variableWrite_sendFrame
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_Write *****************
+ Defined at:
+		line 219 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+  txData          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  txData          1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_variableWrite_sendValue
+		_variableWrite_sendFrame
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_IsTxDone *****************
+ Defined at:
+		line 179 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_variableWrite_sendFrame
+		_EUSART2_is_tx_done
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_Transmit_ISR *****************
+ Defined at:
+		line 243 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
+		_INTERRUPT_InterruptManager
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_Receive_ISR *****************
+ Defined at:
+		line 262 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Absolute function
+		_EUSART2_DefaultErrorHandler
+		_EUSART2_DefaultFramingErrorHandler
+		_EUSART2_DefaultOverrunErrorHandler
+		_EUSART2_RxDataHandler
+ This function is called by:
+		_EUSART2_Initialize
+		_INTERRUPT_InterruptManager
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_DefaultOverrunErrorHandler *****************
+ Defined at:
+		line 298 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
+		_EUSART2_Receive_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_DefaultFramingErrorHandler *****************
+ Defined at:
+		line 296 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Initialize
+		_EUSART2_Receive_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_DefaultErrorHandler *****************
+ Defined at:
+		line 306 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_EUSART2_RxDataHandler
+ This function is called by:
+		_EUSART2_Initialize
+		_EUSART2_Receive_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART2_RxDataHandler *****************
+ Defined at:
+		line 286 in file "mcc_generated_files/uart/src/eusart2.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART2_Receive_ISR
+		_EUSART2_DefaultErrorHandler
+ This function uses a non-reentrant model
+
+
 
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-mcc_generated_files/system/src/interrupt.c
-		_INT0_SetInterruptHandler		CODE           	1104	0000	14
-		_INT1_SetInterruptHandler		CODE           	10F6	0000	14
-		_INT2_SetInterruptHandler		CODE           	10E8	0000	14
-		_INTERRUPT_Initialize		CODE           	0FC4	0000	70
-		_INTERRUPT_InterruptManager		CODE           	0008	0000	70
+mcc_generated_files/data_streamer/src/data_streamer.c
+		_variableWrite_sendValue		CODE           	130A	0000	48
+		_variableWrite_sendFrame		CODE           	124C	0000	70
 
-mcc_generated_files/system/src/interrupt.c estimated size: 182
+mcc_generated_files/data_streamer/src/data_streamer.c estimated size: 118
+
+mcc_generated_files/system/src/interrupt.c
+		_INT0_SetInterruptHandler		CODE           	143C	0000	14
+		_INT1_SetInterruptHandler		CODE           	142E	0000	14
+		_INT2_SetInterruptHandler		CODE           	1420	0000	14
+		_INTERRUPT_Initialize		CODE           	1200	0000	76
+		_INTERRUPT_InterruptManager		CODE           	0008	0000	206
+
+mcc_generated_files/system/src/interrupt.c estimated size: 324
+
+mcc_generated_files/uart/src/eusart2.c
+		_EUSART2_SetOverrunErrorHandler		CODE           	1466	0000	14
+		_EUSART2_IsTxDone		CODE           	13FC	0000	22
+		_EUSART2_SetErrorHandler		CODE           	1482	0000	14
+		_EUSART2_Write 		CODE           	11A8	0000	88
+		_EUSART2_Receive_ISR		CODE           	0F3C	0000	192
+		_EUSART2_RxDataHandler		CODE           	1364	0000	42
+		_EUSART2_DefaultOverrunErrorHandler		CODE           	1490	0000	8
+		_EUSART2_Transmit_ISR		CODE           	1292	0000	68
+		_EUSART2_DefaultFramingErrorHandler		CODE           	14A0	0000	2
+		_EUSART2_SetRxInterruptHandler		CODE           	1458	0000	14
+		_EUSART2_SetTxInterruptHandler		CODE           	144A	0000	14
+		_EUSART2_Initialize		CODE           	10B6	0000	154
+		_EUSART2_DefaultErrorHandler		CODE           	1498	0000	6
+		_EUSART2_SetFramingErrorHandler		CODE           	1474	0000	14
+
+mcc_generated_files/uart/src/eusart2.c estimated size: 652
 
 mcc_generated_files/system/src/pins.c
-		_PIN_MANAGER_Initialize		CODE           	0F14	0000	176
+		_PIN_MANAGER_Initialize		CODE           	0FFC	0000	186
 
-mcc_generated_files/system/src/pins.c estimated size: 176
+mcc_generated_files/system/src/pins.c estimated size: 186
 
 shared
-		__initialization		CODE           	1112	0000	1
-		_Timer0        		SMALLCONST     	0F01	0000	18
+		_EUSART2_Interface		SMALLCONST     	0F01	0000	39
+		__initialization		CODE           	13D0	0000	12
+		_Timer0        		SMALLCONST     	0F28	0000	18
 
-shared estimated size: 19
+shared estimated size: 69
 
 mcc_generated_files/system/src/clock.c
-		_CLOCK_Initialize		CODE           	10A8	0000	32
+		_CLOCK_Initialize		CODE           	13B0	0000	32
 
 mcc_generated_files/system/src/clock.c estimated size: 32
 
 mcc_generated_files/timer/src/tmr0.c
-		_Timer0_Initialize		CODE           	103E	0000	40
-		_Timer0_OverflowCallbackRegister		CODE           	10DA	0000	14
-		_Timer0_OverflowISR		CODE           	100A	0000	52
-		_Timer0_DefaultOverflowCallback		CODE           	111C	0000	2
+		_Timer0_Initialize		CODE           	133A	0000	42
+		_Timer0_OverflowCallbackRegister		CODE           	1412	0000	14
+		_Timer0_OverflowISR		CODE           	12D6	0000	52
+		_Timer0_DefaultOverflowCallback		CODE           	149E	0000	2
 
-mcc_generated_files/timer/src/tmr0.c estimated size: 108
+mcc_generated_files/timer/src/tmr0.c estimated size: 110
 
 main.c
-		_TMR0_overflow_cb		CODE           	1066	0000	34
-		_main          		CODE           	1088	0000	32
+		_TMR0_overflow_cb		CODE           	1150	0000	88
+		_main          		CODE           	138E	0000	34
 
-main.c estimated size: 66
+main.c estimated size: 122
 
 mcc_generated_files/system/src/system.c
-		_SYSTEM_Initialize		CODE           	10C8	0000	18
+		_SYSTEM_Initialize		CODE           	13E6	0000	22
 
-mcc_generated_files/system/src/system.c estimated size: 18
+mcc_generated_files/system/src/system.c estimated size: 22
 

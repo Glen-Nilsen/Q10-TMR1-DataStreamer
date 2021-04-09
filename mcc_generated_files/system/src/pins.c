@@ -61,7 +61,7 @@ void PIN_MANAGER_Initialize(void)
     TRISA = 0xFF;
     TRISB = 0xFF;
     TRISC = 0xFF;
-    TRISD = 0xFF;
+    TRISD = 0xFE;
     TRISE = 0x6;
 
     /**
@@ -111,7 +111,9 @@ void PIN_MANAGER_Initialize(void)
     /**
     PPS registers
     */
+    RX2PPS = 0x19; //RD1->EUSART2:RX2;
     T0CKIPPS = 0x4; //RA4->TMR0:T0CKI;
+    RD0PPS = 0xB;  //RD0->EUSART2:TX2;
 
    /**
     IOCx registers 

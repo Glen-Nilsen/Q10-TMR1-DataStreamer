@@ -1,88 +1,10 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F12681 `(v ~T0 @X0 0 tf ]
-[v F12683 `(v ~T0 @X0 0 tf ]
-[v F12685 `(v ~T0 @X0 0 tf ]
-[v F12687 `(v ~T0 @X0 0 tf1`ui ]
-[v F12691 `(v ~T0 @X0 0 tf ]
-[v F12690 `(v ~T0 @X0 0 tf1`*F12691 ]
-[v F12694 `(v ~T0 @X0 0 tf ]
-"71 mcc_generated_files/timer/src/../timer_interface.h
-[; ;mcc_generated_files/timer/src/../timer_interface.h: 71: {
-[s S1736 `*F12681 1 `*F12683 1 `*F12685 1 `*F12687 1 `*F12690 1 `*F12694 1 ]
-[n S1736 TMR_INTERFACE Initialize Start Stop PeriodCountSet TimeoutCallbackRegister Tasks ]
-"96 mcc_generated_files/timer/src/../tmr0.h
-[; ;mcc_generated_files/timer/src/../tmr0.h: 96: void Timer0_Initialize(void);
-[v _Timer0_Initialize `(v ~T0 @X0 0 ef ]
-"120
-[; ;mcc_generated_files/timer/src/../tmr0.h: 120: void Timer0_Start(void);
-[v _Timer0_Start `(v ~T0 @X0 0 ef ]
-"151
-[; ;mcc_generated_files/timer/src/../tmr0.h: 151: void Timer0_Stop(void);
-[v _Timer0_Stop `(v ~T0 @X0 0 ef ]
-"202
-[; ;mcc_generated_files/timer/src/../tmr0.h: 202: void Timer0_Write(size_t timerVal);
-[v _Timer0_Write `(v ~T0 @X0 0 ef1`ui ]
-[v F12706 `(v ~T0 @X0 0 tf ]
-"260
-[; ;mcc_generated_files/timer/src/../tmr0.h: 260:  void Timer0_OverflowCallbackRegister(void (* CallbackHandler)(void));
-[v _Timer0_OverflowCallbackRegister `(v ~T0 @X0 0 ef1`*F12706 ]
-[v F12718 `(v ~T0 @X0 0 tf ]
-[v F12720 `(v ~T0 @X0 0 tf ]
-"36308 /home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36308: extern volatile unsigned char TMR0H __attribute__((address(0xFD3)));
-[v _TMR0H `Vuc ~T0 @X0 0 e@4051 ]
-"36170
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36170: extern volatile unsigned char TMR0L __attribute__((address(0xFD2)));
-[v _TMR0L `Vuc ~T0 @X0 0 e@4050 ]
-"36627
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36627: extern volatile unsigned char T0CON1 __attribute__((address(0xFD5)));
-[v _T0CON1 `Vuc ~T0 @X0 0 e@4053 ]
-"70 mcc_generated_files/timer/src/tmr0.c
-[; ;mcc_generated_files/timer/src/tmr0.c: 70: static void Timer0_DefaultOverflowCallback(void);
-[v _Timer0_DefaultOverflowCallback `(v ~T0 @X0 0 sf ]
-"15639 /home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 15639:     struct {
-[s S676 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S676 . INT0IF INT1IF INT2IF . IOCIF TMR0IF ]
-"15638
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 15638: typedef union {
-[u S675 `S676 1 ]
-[n S675 . . ]
-"15648
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 15648: extern volatile PIR0bits_t PIR0bits __attribute__((address(0xEC5)));
-[v _PIR0bits `VS675 ~T0 @X0 0 e@3781 ]
-"15222
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 15222:     struct {
-[s S658 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S658 . INT0IE INT1IE INT2IE . IOCIE TMR0IE ]
-"15221
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 15221: typedef union {
-[u S657 `S658 1 ]
-[n S657 . . ]
-"15231
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 15231: extern volatile PIE0bits_t PIE0bits __attribute__((address(0xEBD)));
-[v _PIE0bits `VS657 ~T0 @X0 0 e@3773 ]
-"36562
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36562: extern volatile unsigned char T0CON0 __attribute__((address(0xFD4)));
-[v _T0CON0 `Vuc ~T0 @X0 0 e@4052 ]
-"36568
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36568:     struct {
-[s S1640 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1640 . T0OUTPS T016BIT T0OUT . T0EN ]
-"36575
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36575:     struct {
-[s S1641 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1641 . T0OUTPS0 T0OUTPS1 T0OUTPS2 T0OUTPS3 ]
-"36567
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36567: typedef union {
-[u S1639 `S1640 1 `S1641 1 ]
-[n S1639 . . . ]
-"36582
-[; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 36582: extern volatile T0CON0bits_t T0CON0bits __attribute__((address(0xFD4)));
-[v _T0CON0bits `VS1639 ~T0 @X0 0 e@4052 ]
-[v F12733 `(v ~T0 @X0 0 tf ]
-[v F12735 `(v ~T0 @X0 0 tf ]
-[v F12737 `(v ~T0 @X0 0 tf ]
+"370 mcc_generated_files/data_streamer/src/../../uart/eusart2.h
+[; ;mcc_generated_files/data_streamer/src/../../uart/eusart2.h: 370: void EUSART2_Write(uint8_t txData);
+[v _EUSART2_Write `(v ~T0 @X0 0 ef1`uc ]
+"282
+[; ;mcc_generated_files/data_streamer/src/../../uart/eusart2.h: 282: _Bool EUSART2_IsTxDone(void);
+[v _EUSART2_IsTxDone `(a ~T0 @X0 0 ef ]
 "55 /home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h
 [; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 55: __asm("CLCIN0PPS equ 0E1Fh");
 [; <" CLCIN0PPS equ 0E1Fh ;# ">
@@ -1769,206 +1691,86 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37919
 [; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 37919: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"60 mcc_generated_files/timer/src/tmr0.c
-[; ;mcc_generated_files/timer/src/tmr0.c: 60: const struct TMR_INTERFACE Timer0 = {
-[v _Timer0 `CS1736 ~T0 @X0 1 e ]
-[i _Timer0
-:U ..
-:U ..
-&U _Timer0_Initialize
-&U _Timer0_Start
-&U _Timer0_Stop
-&U _Timer0_Write
-&U _Timer0_OverflowCallbackRegister
--> -> -> 0 `i `*v `*F12718
-..
-..
-]
-"69
-[; ;mcc_generated_files/timer/src/tmr0.c: 69: static void (*Timer0_OverflowCallback)(void);
-[v _Timer0_OverflowCallback `*F12720 ~T0 @X0 1 s ]
-"72
-[; ;mcc_generated_files/timer/src/tmr0.c: 72: void Timer0_Initialize(void)
-[v _Timer0_Initialize `(v ~T0 @X0 1 ef ]
-"73
-[; ;mcc_generated_files/timer/src/tmr0.c: 73: {
+"11 mcc_generated_files/data_streamer/src/data_streamer.c
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 11: static void variableWrite_sendValue(uint8_t* byte_ptr, uint8_t num_bytes)
+[v _variableWrite_sendValue `(v ~T0 @X0 1 sf2`*uc`uc ]
+"12
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 12:  {
 {
-[e :U _Timer0_Initialize ]
+[e :U _variableWrite_sendValue ]
+"11
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 11: static void variableWrite_sendValue(uint8_t* byte_ptr, uint8_t num_bytes)
+[v _byte_ptr `*uc ~T0 @X0 1 r1 ]
+[v _num_bytes `uc ~T0 @X0 1 r2 ]
+"12
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 12:  {
 [f ]
-"75
-[; ;mcc_generated_files/timer/src/tmr0.c: 75:     TMR0H = 0xC0;
-[e = _TMR0H -> -> 192 `i `uc ]
-"78
-[; ;mcc_generated_files/timer/src/tmr0.c: 78:     TMR0L = 0x0;
-[e = _TMR0L -> -> 0 `i `uc ]
-"81
-[; ;mcc_generated_files/timer/src/tmr0.c: 81:     T0CON1 = 0x94;
-[e = _T0CON1 -> -> 148 `i `uc ]
-"85
-[; ;mcc_generated_files/timer/src/tmr0.c: 85:     Timer0_OverflowCallbackRegister(Timer0_DefaultOverflowCallback);
-[e ( _Timer0_OverflowCallbackRegister (1 &U _Timer0_DefaultOverflowCallback ]
-"88
-[; ;mcc_generated_files/timer/src/tmr0.c: 88:     PIR0bits.TMR0IF = 0;
-[e = . . _PIR0bits 0 5 -> -> 0 `i `uc ]
-"91
-[; ;mcc_generated_files/timer/src/tmr0.c: 91:     PIE0bits.TMR0IE = 1;
-[e = . . _PIE0bits 0 5 -> -> 1 `i `uc ]
-"94
-[; ;mcc_generated_files/timer/src/tmr0.c: 94:     T0CON0 = 0x80;
-[e = _T0CON0 -> -> 128 `i `uc ]
-"95
-[; ;mcc_generated_files/timer/src/tmr0.c: 95: }
-[e :UE 1737 ]
+"13
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 13:       for(uint8_t i = 0; i < num_bytes; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 1743  ]
+[e :U 1740 ]
+"14
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 14:       {
+{
+"15
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 15:          EUSART2_Write(byte_ptr[i]);
+[e ( _EUSART2_Write (1 *U + _byte_ptr * -> _i `ux -> -> # *U _byte_ptr `ui `ux ]
+"16
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 16:       }
 }
-"97
-[; ;mcc_generated_files/timer/src/tmr0.c: 97: void Timer0_Start(void)
-[v _Timer0_Start `(v ~T0 @X0 1 ef ]
-"98
-[; ;mcc_generated_files/timer/src/tmr0.c: 98: {
-{
-[e :U _Timer0_Start ]
-[f ]
-"99
-[; ;mcc_generated_files/timer/src/tmr0.c: 99:     T0CON0bits.T0EN = 1;
-[e = . . _T0CON0bits 0 4 -> -> 1 `i `uc ]
-"100
-[; ;mcc_generated_files/timer/src/tmr0.c: 100: }
-[e :UE 1738 ]
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 1743 ]
+[e $ < -> _i `i -> _num_bytes `i 1740  ]
+[e :U 1741 ]
 }
-"102
-[; ;mcc_generated_files/timer/src/tmr0.c: 102: void Timer0_Stop(void)
-[v _Timer0_Stop `(v ~T0 @X0 1 ef ]
-"103
-[; ;mcc_generated_files/timer/src/tmr0.c: 103: {
-{
-[e :U _Timer0_Stop ]
-[f ]
-"104
-[; ;mcc_generated_files/timer/src/tmr0.c: 104:     T0CON0bits.T0EN = 0;
-[e = . . _T0CON0bits 0 4 -> -> 0 `i `uc ]
-"105
-[; ;mcc_generated_files/timer/src/tmr0.c: 105: }
+"17
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 17: }
 [e :UE 1739 ]
 }
-"107
-[; ;mcc_generated_files/timer/src/tmr0.c: 107: uint8_t Timer0_Read(void)
-[v _Timer0_Read `(uc ~T0 @X0 1 ef ]
-"108
-[; ;mcc_generated_files/timer/src/tmr0.c: 108: {
+"19
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 19: void variableWrite_sendFrame(uint8_t count_8bit, uint16_t count_16bit, uint32_t count_32bit)
+[v _variableWrite_sendFrame `(v ~T0 @X0 1 ef3`uc`us`ul ]
+"20
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 20: {
 {
-[e :U _Timer0_Read ]
+[e :U _variableWrite_sendFrame ]
+"19
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 19: void variableWrite_sendFrame(uint8_t count_8bit, uint16_t count_16bit, uint32_t count_32bit)
+[v _count_8bit `uc ~T0 @X0 1 r1 ]
+[v _count_16bit `us ~T0 @X0 1 r2 ]
+[v _count_32bit `ul ~T0 @X0 1 r3 ]
+"20
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 20: {
 [f ]
-"109
-[; ;mcc_generated_files/timer/src/tmr0.c: 109:     uint8_t readVal;
-[v _readVal `uc ~T0 @X0 1 a ]
-"112
-[; ;mcc_generated_files/timer/src/tmr0.c: 112:     readVal = TMR0L;
-[e = _readVal _TMR0L ]
-"114
-[; ;mcc_generated_files/timer/src/tmr0.c: 114:     return readVal;
-[e ) _readVal ]
-[e $UE 1740  ]
-"115
-[; ;mcc_generated_files/timer/src/tmr0.c: 115: }
-[e :UE 1740 ]
-}
-"117
-[; ;mcc_generated_files/timer/src/tmr0.c: 117: void Timer0_Write(size_t timerVal)
-[v _Timer0_Write `(v ~T0 @X0 1 ef1`ui ]
-"118
-[; ;mcc_generated_files/timer/src/tmr0.c: 118: {
-{
-[e :U _Timer0_Write ]
-"117
-[; ;mcc_generated_files/timer/src/tmr0.c: 117: void Timer0_Write(size_t timerVal)
-[v _timerVal `ui ~T0 @X0 1 r1 ]
-"118
-[; ;mcc_generated_files/timer/src/tmr0.c: 118: {
-[f ]
-"120
-[; ;mcc_generated_files/timer/src/tmr0.c: 120:     TMR0L = (uint8_t)timerVal;
-[e = _TMR0L -> _timerVal `uc ]
-"121
-[; ;mcc_generated_files/timer/src/tmr0.c: 121:  }
-[e :UE 1741 ]
-}
-"123
-[; ;mcc_generated_files/timer/src/tmr0.c: 123: void Timer0_Reload(uint8_t periodVal)
-[v _Timer0_Reload `(v ~T0 @X0 1 ef1`uc ]
-"124
-[; ;mcc_generated_files/timer/src/tmr0.c: 124: {
-{
-[e :U _Timer0_Reload ]
-"123
-[; ;mcc_generated_files/timer/src/tmr0.c: 123: void Timer0_Reload(uint8_t periodVal)
-[v _periodVal `uc ~T0 @X0 1 r1 ]
-"124
-[; ;mcc_generated_files/timer/src/tmr0.c: 124: {
-[f ]
-"126
-[; ;mcc_generated_files/timer/src/tmr0.c: 126:    TMR0H = periodVal;
-[e = _TMR0H _periodVal ]
-"127
-[; ;mcc_generated_files/timer/src/tmr0.c: 127: }
-[e :UE 1742 ]
-}
-"129
-[; ;mcc_generated_files/timer/src/tmr0.c: 129: void Timer0_OverflowISR(void)
-[v _Timer0_OverflowISR `(v ~T0 @X0 1 ef ]
-"130
-[; ;mcc_generated_files/timer/src/tmr0.c: 130: {
-{
-[e :U _Timer0_OverflowISR ]
-[f ]
-"132
-[; ;mcc_generated_files/timer/src/tmr0.c: 132:     PIR0bits.TMR0IF = 0;
-[e = . . _PIR0bits 0 5 -> -> 0 `i `uc ]
-"133
-[; ;mcc_generated_files/timer/src/tmr0.c: 133:     if(Timer0_OverflowCallback)
-[e $ ! != _Timer0_OverflowCallback -> -> 0 `i `*F12733 1744  ]
-"134
-[; ;mcc_generated_files/timer/src/tmr0.c: 134:     {
-{
-"135
-[; ;mcc_generated_files/timer/src/tmr0.c: 135:         Timer0_OverflowCallback();
-[e ( *U _Timer0_OverflowCallback ..  ]
-"136
-[; ;mcc_generated_files/timer/src/tmr0.c: 136:     }
-}
-[e :U 1744 ]
-"137
-[; ;mcc_generated_files/timer/src/tmr0.c: 137: }
-[e :UE 1743 ]
-}
-"139
-[; ;mcc_generated_files/timer/src/tmr0.c: 139: void Timer0_OverflowCallbackRegister(void (* CallbackHandler)(void))
-[v _Timer0_OverflowCallbackRegister `(v ~T0 @X0 1 ef1`*F12735 ]
-"140
-[; ;mcc_generated_files/timer/src/tmr0.c: 140: {
-{
-[e :U _Timer0_OverflowCallbackRegister ]
-"139
-[; ;mcc_generated_files/timer/src/tmr0.c: 139: void Timer0_OverflowCallbackRegister(void (* CallbackHandler)(void))
-[v _CallbackHandler `*F12737 ~T0 @X0 1 r1 ]
-"140
-[; ;mcc_generated_files/timer/src/tmr0.c: 140: {
-[f ]
-"141
-[; ;mcc_generated_files/timer/src/tmr0.c: 141:     Timer0_OverflowCallback = CallbackHandler;
-[e = _Timer0_OverflowCallback _CallbackHandler ]
-"142
-[; ;mcc_generated_files/timer/src/tmr0.c: 142: }
-[e :UE 1745 ]
-}
-"144
-[; ;mcc_generated_files/timer/src/tmr0.c: 144: static void Timer0_DefaultOverflowCallback(void)
-[v _Timer0_DefaultOverflowCallback `(v ~T0 @X0 1 sf ]
-"145
-[; ;mcc_generated_files/timer/src/tmr0.c: 145: {
-{
-[e :U _Timer0_DefaultOverflowCallback ]
-[f ]
-"148
-[; ;mcc_generated_files/timer/src/tmr0.c: 148: }
-[e :UE 1746 ]
+"21
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 21:    EUSART2_Write(3);
+[e ( _EUSART2_Write (1 -> -> 3 `i `uc ]
+"23
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 23:    EUSART2_Write(count_8bit);
+[e ( _EUSART2_Write (1 _count_8bit ]
+"25
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 25:    EUSART2_Write((count_16bit >> 0) & 0xFF);
+[e ( _EUSART2_Write (1 -> & >> -> _count_16bit `ui -> 0 `i -> -> 255 `i `ui `uc ]
+"26
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 26:    EUSART2_Write((count_16bit >> 8) & 0xFF);
+[e ( _EUSART2_Write (1 -> & >> -> _count_16bit `ui -> 8 `i -> -> 255 `i `ui `uc ]
+"28
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 28:    variableWrite_sendValue((uint8_t *) &count_32bit, 4);
+[e ( _variableWrite_sendValue (2 , -> &U _count_32bit `*uc -> -> 4 `i `uc ]
+"30
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 30:    EUSART2_Write((255 - 3));
+[e ( _EUSART2_Write (1 -> - -> 255 `i -> 3 `i `uc ]
+"32
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 32:    while(!EUSART2_IsTxDone());
+[e $U 1745  ]
+[e :U 1746 ]
+[e :U 1745 ]
+[e $ ! != -> ( _EUSART2_IsTxDone ..  `i -> 0 `i 1746  ]
+[e :U 1747 ]
+"33
+[; ;mcc_generated_files/data_streamer/src/data_streamer.c: 33: }
+[e :UE 1744 ]
 }

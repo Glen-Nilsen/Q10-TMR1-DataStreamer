@@ -8,8 +8,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "96 mcc_generated_files/system/src/../../timer/tmr0.h
 [; ;mcc_generated_files/system/src/../../timer/tmr0.h: 96: void Timer0_Initialize(void);
 [v _Timer0_Initialize `(v ~T0 @X0 0 ef ]
-"135 mcc_generated_files/system/src/../../system/pins.h
-[; ;mcc_generated_files/system/src/../../system/pins.h: 135: void PIN_MANAGER_Initialize (void);
+"139 mcc_generated_files/system/src/../../uart/eusart2.h
+[; ;mcc_generated_files/system/src/../../uart/eusart2.h: 139: void EUSART2_Initialize(void);
+[v _EUSART2_Initialize `(v ~T0 @X0 0 ef ]
+"175 mcc_generated_files/system/src/../../system/pins.h
+[; ;mcc_generated_files/system/src/../../system/pins.h: 175: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
 "55 /home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h
 [; ;/home/lib/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f47q10.h: 55: __asm("CLCIN0PPS equ 0E1Fh");
@@ -1715,9 +1718,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/system/src/system.c: 66:     Timer0_Initialize();
 [e ( _Timer0_Initialize ..  ]
 "67
-[; ;mcc_generated_files/system/src/system.c: 67:     PIN_MANAGER_Initialize();
-[e ( _PIN_MANAGER_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 67:     EUSART2_Initialize();
+[e ( _EUSART2_Initialize ..  ]
 "68
-[; ;mcc_generated_files/system/src/system.c: 68: }
-[e :UE 1737 ]
+[; ;mcc_generated_files/system/src/system.c: 68:     PIN_MANAGER_Initialize();
+[e ( _PIN_MANAGER_Initialize ..  ]
+"69
+[; ;mcc_generated_files/system/src/system.c: 69: }
+[e :UE 1740 ]
 }

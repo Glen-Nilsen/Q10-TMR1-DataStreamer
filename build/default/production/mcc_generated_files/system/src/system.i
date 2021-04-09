@@ -21493,13 +21493,98 @@ void Timer0_OverflowISR(void);
  void Timer0_OverflowCallbackRegister(void (* CallbackHandler)(void));
 # 65 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "mcc_generated_files/system/src/../../system/pins.h" 1
-# 135 "mcc_generated_files/system/src/../../system/pins.h"
-void PIN_MANAGER_Initialize (void);
-# 147 "mcc_generated_files/system/src/../../system/pins.h"
-void PIN_MANAGER_IOC(void);
+# 1 "mcc_generated_files/system/src/../../uart/eusart2.h" 1
+# 68 "mcc_generated_files/system/src/../../uart/eusart2.h"
+# 1 "mcc_generated_files/system/src/../../uart/uart_interface.h" 1
+# 73 "mcc_generated_files/system/src/../../uart/uart_interface.h"
+struct UART_INTERFACE
+{
+    void (*Initialize)(void);
+    uint8_t (*Read)(void);
+    void (*Write)(uint8_t);
+    void (*RxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*TxCompleteCallbackRegister)(void (*CallbackHandler));
+    void (*ErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*FramingErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*OverrunErrorCallbackRegister)(void (*CallbackHandler)(void));
+    void (*ParityErrorCallbackRegister)(void (*CallbackHandler));
+    void (*ChecksumErrorCallbackRegister)(void (*CallbackHandler));
+    _Bool (*IsRxReady)(void);
+    _Bool (*IsTxReady)(void);
+    _Bool (*IsTxDone)(void);
+};
+# 68 "mcc_generated_files/system/src/../../uart/eusart2.h" 2
+# 80 "mcc_generated_files/system/src/../../uart/eusart2.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}eusart2_status_t;
+# 97 "mcc_generated_files/system/src/../../uart/eusart2.h"
+_Bool __attribute__(( deprecated )) EUSART2_is_tx_ready(void);
+_Bool __attribute__(( deprecated )) EUSART2_is_rx_ready(void);
+_Bool __attribute__(( deprecated )) EUSART2_is_tx_done(void);
+eusart2_status_t EUSART2_get_last_status(void);
+# 109 "mcc_generated_files/system/src/../../uart/eusart2.h"
+extern volatile uint8_t eusart2TxBufferRemaining;
+extern volatile uint8_t eusart2RxCount;
+extern const struct UART_INTERFACE EUSART2_Interface;
+
+
+
+
+extern void (*EUSART2_TxDefaultInterruptHandler)(void);
+extern void (*EUSART2_RxDefaultInterruptHandler)(void);
+# 139 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_Initialize(void);
+# 187 "mcc_generated_files/system/src/../../uart/eusart2.h"
+_Bool EUSART2_IsTxReady(void);
+# 235 "mcc_generated_files/system/src/../../uart/eusart2.h"
+_Bool EUSART2_IsRxReady(void);
+# 282 "mcc_generated_files/system/src/../../uart/eusart2.h"
+_Bool EUSART2_IsTxDone(void);
+# 330 "mcc_generated_files/system/src/../../uart/eusart2.h"
+eusart2_status_t EUSART2_GetLastStatus(void);
+# 350 "mcc_generated_files/system/src/../../uart/eusart2.h"
+uint8_t EUSART2_Read(void);
+# 370 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_Write(uint8_t txData);
+# 391 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_Transmit_ISR(void);
+# 412 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_Receive_ISR(void);
+# 433 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_RxDataHandler(void);
+# 451 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 469 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 487 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
+# 507 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_SetTxInterruptHandler(void (* interruptHandler)(void));
+# 527 "mcc_generated_files/system/src/../../uart/eusart2.h"
+void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
 # 66 "mcc_generated_files/system/src/../system.h" 2
-# 79 "mcc_generated_files/system/src/../system.h"
+
+# 1 "mcc_generated_files/system/src/../../system/pins.h" 1
+# 175 "mcc_generated_files/system/src/../../system/pins.h"
+void PIN_MANAGER_Initialize (void);
+# 187 "mcc_generated_files/system/src/../../system/pins.h"
+void PIN_MANAGER_IOC(void);
+# 67 "mcc_generated_files/system/src/../system.h" 2
+
+# 1 "mcc_generated_files/system/src/../../data_streamer/data_streamer.h" 1
+
+
+
+void variableWrite_sendFrame(uint8_t count_8bit, uint16_t count_16bit, uint32_t count_32bit);
+# 68 "mcc_generated_files/system/src/../system.h" 2
+# 81 "mcc_generated_files/system/src/../system.h"
 void SYSTEM_Initialize(void);
 # 59 "mcc_generated_files/system/src/system.c" 2
 
@@ -21510,5 +21595,6 @@ void SYSTEM_Initialize(void)
     INTERRUPT_Initialize();
     CLOCK_Initialize();
     Timer0_Initialize();
+    EUSART2_Initialize();
     PIN_MANAGER_Initialize();
 }
